@@ -343,7 +343,7 @@ a:hover,
   padding-bottom: 50px;
 }
 .m-home-box h2 {
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
 }
 .m-home-box p {
   margin: 0 0 20px 0;
@@ -840,7 +840,7 @@ figure.effect-lily:hover p {
 /* 服务内容 */
 .m-services {
   background: #1a1f2a;
-  padding: 40px 0 40px 0;
+  padding: 20px 0 20px 0;
   color: #fff;
 }
 
