@@ -1,9 +1,4 @@
-# NeworldWebside
-<<<<<<< HEAD
-# edit
-=======
-# edit
+ï»¿# NeworldWebside
 
-²âÊÔ²âÊÔ
 
->>>>>>> dd2fb254eaa913c3f41211702a35eafdabefadba
+[æµè§ˆé¡µé¢http://htmlpreview.github.io/?https://github.com/Gewukeji/NeworldWebside/blob/master/index.html](http://htmlpreview.github.io/?https://github.com/Gewukeji/NeworldWebside/blob/master/index.html)
