@@ -93,25 +93,25 @@ a:hover,
   color: #fff;
 }
 .m-hd .m-nav a:hover {
-  background: #ba1f2e;
+  background: #555;
   border-radius: 2px;
   -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
   transition: background-color 300ms ease-out, border-color 300ms ease-out;
 }
 .m-hd .am-nav > li.am-active > a, .m-hd .am-nav > li.am-active > a:focus, .m-hd .am-nav > li.am-active > a:hover {
   color: #fff;
-  background-color: #ba1f2e;
+  background-color: #555;
   cursor: default;
 }
 .m-hd .am-dropdown-content {
-  background: #ba1f2e;
+  background: #555;
   border: none;
 }
 .m-hd .am-dropdown-content > li > a:hover {
   color: #fff;
 }
 .m-hd .am-dropdown-content:after, .m-hd .am-dropdown-content:before {
-  border: 8px dashed #ba1f2e;
+  border: 8px dashed #555;
 }
 .m-hd .am-dropdown-content > .am-active > a,
 .m-hd .am-dropdown-content > .am-active > a:focus,
@@ -335,8 +335,8 @@ a:hover,
   border: 1px solid #FF9900;
 }
 .am-btn-danger:hover {
-  background: #ba1f2e;
-  border: 1px solid #ba1f2e;
+  background: #555;
+  border: 1px solid #555;
 }
 
 .m-home-box {
@@ -863,7 +863,7 @@ figure.effect-lily:hover p {
 .m-service-list li:hover {
   background: #d22e3e;
   border: 1px solid #d22e3e;
-  border-left: 10px solid #ba1f2e;
+  border-left: 10px solid #555;
   color: #fff;
   margin-bottom: 30px;
 }
@@ -950,7 +950,7 @@ figure.effect-lily:hover p {
   width: 40px;
   height: 40px;
   display: block;
-  background-color: #d22e3e;
+  background-color: #f90;
 }
 
 .m-top-go {
@@ -958,7 +958,7 @@ figure.effect-lily:hover p {
   margin-top: 1px;
 }
 .m-top-go:hover {
-  background-color: #ba1f2e;
+  background-color: #555;
 }
 
 .m-top-goicon {
