@@ -217,7 +217,7 @@
 				//return "BHR建筑门窗保温性能检测设备1.htm";
 			}
 
-			document.getElementById("mine-iframe").src="products/"+decodeURI(GetQueryString("file"));
+			document.getElementById("mine-iframe").src="products/"+decodeURI(GetQueryString("path"))+"/"+decodeURI(GetQueryString("file"));
 			
 			function setIframeHeight(iframe) {
 				if(iframe) {

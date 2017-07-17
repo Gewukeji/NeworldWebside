@@ -1,0 +1,2110 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>SINGA300爬行机器人检测系统</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:幼圆;
+	panose-1:2 1 5 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:华文隶书;
+	panose-1:2 1 8 0 4 1 1 1 1 1;}
+@font-face
+	{font-family:方正姚体;
+	panose-1:2 1 6 1 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@幼圆";}
+@font-face
+	{font-family:"\@华文隶书";}
+@font-face
+	{font-family:"\@方正姚体";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"标题 1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.6pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:18.0pt;
+	font-family:黑体;
+	font-weight:normal;}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:7.8pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:15.0pt;
+	font-family:黑体;
+	font-weight:normal;}
+h3
+	{mso-style-link:"标题 3 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:14.0pt;
+	font-family:幼圆;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-link:"标题 3";
+	font-family:幼圆;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-link:"标题 2";
+	font-family:黑体;}
+span.CharChar2
+	{mso-style-name:" Char Char2";
+	font-family:黑体;}
+span.CharChar1
+	{mso-style-name:" Char Char1";
+	font-family:黑体;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.CharChar
+	{mso-style-name:" Char Char";
+	font-family:幼圆;
+	font-weight:bold;}
+span.font12181
+	{mso-style-name:font12181;}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-link:"标题 1";
+	font-family:黑体;}
+span.Char
+	{mso-style-name:"批注框文本 Char";
+	mso-style-link:批注框文本;}
+p.4, li.4, div.4
+	{mso-style-name:标题4;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:幼圆;
+	color:#333333;}
+p.Char0, li.Char0, div.Char0
+	{mso-style-name:Char;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.1, li.1, div.1
+	{mso-style-name:列出段落1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 73.7pt 2.0cm 73.7pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<h2 align=center style='text-align:center;text-indent:18.0pt'><a
+name="_Toc346721050"><span lang=EN-US style='font-size:18.0pt'>&nbsp;</span></a></h2>
+
+<h2 align=center style='text-align:center;text-indent:18.0pt'><span lang=EN-US
+style='font-size:18.0pt'>SINGA300</span><span style='font-size:18.0pt'>防爆机器人<span
+lang=EN-US>CCTV</span>检测系统</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><img
+width=630 height=408 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image001.jpg"></span></p>
+
+<h2 align=center style='text-align:center;text-indent:15.0pt'><span lang=EN-US>&nbsp;</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-left:84.0pt;text-align:left;
+line-height:150%'><b><span style='font-size:14.0pt;line-height:150%;font-family:
+宋体'>深圳市施罗德工业测控设备有限公司</span></b></p>
+
+<p class=MsoNormal align=left style='margin-left:84.0pt;text-align:left;
+line-height:150%'><b><span style='font-size:11.0pt;line-height:150%;font-family:
+宋体'>地</span></b><b><span style='font-size:11.0pt;line-height:150%'> </span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>址：深圳市南山区桃源街道同富裕工业城</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>9</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>号</span></b></p>
+
+<p class=MsoNormal align=left style='margin-left:84.0pt;text-align:left;
+line-height:150%'><b><span style='font-size:11.0pt;line-height:150%;font-family:
+宋体'>南</span></b><b><span style='font-size:11.0pt;line-height:150%'> </span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>京：南京市江宁开发区</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>21</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>世纪现代城</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>51</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>栋</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>1901</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>室</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>    </span></b></p>
+
+<p class=MsoNormal align=left style='margin-left:84.0pt;text-align:left;
+line-height:150%'><b><span style='font-size:11.0pt;line-height:150%;font-family:
+宋体'>上</span></b><b><span style='font-size:11.0pt;line-height:150%'> </span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>海：上海市徐汇区南丹路</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>108</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>号</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>211</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>室（服务中心）</span></b></p>
+
+<p class=MsoNormal align=left style='margin-left:84.0pt;text-align:left;
+line-height:150%'><b><span style='font-size:11.0pt;line-height:150%;font-family:
+宋体'>德</span></b><b><span style='font-size:11.0pt;line-height:150%'> </span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>清：浙江省湖州市德清县地理信息产业园国遥大厦</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>705</span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>室（服务中心）</span></b></p>
+
+<p class=MsoNormal align=left style='margin-left:84.0pt;text-align:left;
+line-height:150%'><b><span style='font-size:11.0pt;line-height:150%;font-family:
+宋体'>网</span></b><b><span style='font-size:11.0pt;line-height:150%'> </span></b><b><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>站：</span></b><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>www.sld-cctv.com</span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><b><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>&nbsp;</span></b></p>
+
+<h2 align=center style='text-align:center'><span lang=EN-US>SINGA300</span>防爆机器人<span
+lang=EN-US>CCTV</span>检测系统</h2>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=DE><img
+width=346 height=231 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image002.jpg"></span><span
+lang=EN-US style='font-size:14.0pt;font-family:黑体;color:red'><img width=584
+height=222 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image003.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:150%'><span class=apple-converted-space><span
+lang=EN-US style='font-size:9.0pt;line-height:150%;color:#333333'>&nbsp; </span></span><span
+class=apple-converted-space><span lang=EN-US style='line-height:150%;
+color:#333333'>  </span></span><span class=apple-converted-space><span
+lang=EN-US style='line-height:150%'> </span></span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'> </span><span
+class=apple-converted-space><span style='font-size:11.0pt;line-height:150%;
+font-family:宋体'>管道闭路电视系统</span></span><span class=apple-converted-space><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'> Closed Circuit
+Television(</span></span><span class=apple-converted-space><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>简称</span></span><span
+class=apple-converted-space><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>CCTV)</span></span><span style='font-size:11.0pt;line-height:
+150%;font-family:宋体'>起源于二十世纪六十年代，主要应用在城市排水管道系统的检测，随着科学技术的不断进步，特别是计算机技术的高速发展，该项技术得到了广泛的发展，</span><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>CCTV</span><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>管道内窥检测技术在我国仍处起步阶段，随着国家对城市排水管道设施投入力度不断加大，人们环保意识不断增强，城市排水管</span><span
+class=apple-converted-space><span style='font-size:11.0pt;line-height:150%;
+font-family:宋体'>道的管理维护将会得到应有的重视，</span></span><span
+class=apple-converted-space><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>CCTV</span></span><span class=apple-converted-space><span
+style='font-size:11.0pt;line-height:150%;font-family:宋体'>管道内窥检测技术也将会得到广泛的发展。</span></span></p>
+
+<p class=MsoNormal style='text-indent:27.5pt;line-height:150%'><span
+class=apple-converted-space><span style='font-size:11.0pt;line-height:150%;
+font-family:宋体'>管道</span></span><span class=apple-converted-space><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>CCTV</span></span><span
+class=apple-converted-space><span style='font-size:11.0pt;line-height:150%;
+font-family:宋体'>检测系统由操作牵引车，摄像机和其他组建组成，通过探测可判断管道的质量优劣，发现管道内壁裂缝，接口缺陷及旧管道的腐蚀情况，及辅助完成管道破损内衬修复等。该车在检测过程中，由计算机系统操控，可杜绝以往因验收管道人员下井作业造成的伤亡事故。该检测技术具有科学性，准确性，安全性。</span></span></p>
+
+<h3>管道<span lang=EN-US>CCTV</span>视频检测仪在市政行业应用：</h3>
+
+<p class=MsoListParagraph align=left style='margin-left:39.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:Wingdings'>²<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;line-height:150%;font-family:黑体'>对市政雨污水管道进行安全、方便、快速的普查、养护、抽查等工作；</span></p>
+
+<p class=MsoListParagraph align=left style='margin-left:18.0pt;text-align:left;
+text-indent:0cm;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:"Arial",sans-serif'>    <img width=505 height=110
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image004.jpg"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-left:39.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:Wingdings'>²<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;line-height:150%;font-family:黑体'>管道系统竣工验收，有效避免遗漏杂物及管道接口错位和不到位；</span></p>
+
+<p class=MsoListParagraph align=left style='margin-left:39.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:Wingdings'>²<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;line-height:150%;font-family:黑体'>在管道维护清理前对管道进行内部进行快速检测，有针对性进行，可明显提高作业效率；</span></p>
+
+<p class=MsoListParagraph align=left style='margin-left:39.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:Wingdings'>²<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;line-height:150%;font-family:黑体'>非开挖铺设前、后的检测和验收；</span></p>
+
+<p class=MsoListParagraph align=left style='margin-left:39.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:Wingdings'>²<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;line-height:150%;font-family:黑体'>地下管网的统计与数据采集；</span></p>
+
+<p class=MsoListParagraph align=left style='margin-left:39.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;
+line-height:150%;font-family:Wingdings'>²<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.0pt;line-height:150%;font-family:黑体'>环境保护的污水泄漏检测；检查非法排放污水管口，了解排污源头；</span></p>
+
+<p class=MsoListParagraph align=left style='text-align:left;text-indent:0cm;
+line-height:150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%;
+font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=center style='text-align:center;text-indent:
+0cm;line-height:150%'><span lang=EN-US><img width=570 height=360
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image005.jpg"></span></p>
+
+<p class=MsoListParagraph align=center style='text-align:center;text-indent:
+0cm;line-height:150%'><span lang=EN-US style='font-size:11.0pt;line-height:
+150%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<h1 style='margin-left:21.0pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-21.0pt'><span lang=EN-US style='font-size:15.0pt;font-family:Wingdings'>Ø<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:15.0pt'>产品应用场所</span></h1>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>1</span><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>、城市地下管网检测<span lang=EN-US>  </span>（图<span
+lang=EN-US>1</span>）</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>2</span><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>、市政地下管道检测（图<span lang=EN-US>2</span>）</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>3</span><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>、管网数据采集工具（图<span lang=EN-US>3</span>）</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>4</span><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>、管道内取样工具（图<span lang=EN-US>4</span>）</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>5</span><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>、管道修复：高压冲洗（图<span lang=EN-US>5</span>）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:幼圆'>6</span><span
+style='font-size:12.0pt;line-height:150%;font-family:幼圆'>、管道修复：推放封堵气囊（图<span
+lang=EN-US>6</span>）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b><span lang=EN-US><img
+width=298 height=130 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image006.jpg">   <img
+width=204 height=133 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image007.jpg"></span></b></p>
+
+<p class=MsoNormal style='text-indent:122.7pt'><b><span style='font-size:9.0pt;
+font-family:宋体'>图</span></b><b><span lang=EN-US style='font-size:9.0pt'>1                                    
+</span></b><b><span style='font-size:9.0pt;font-family:宋体'>图</span></b><b><span
+lang=EN-US style='font-size:9.0pt'>2</span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b><span lang=EN-US><img
+width=119 height=93 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image008.jpg">   <img
+width=104 height=91 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image009.jpg">   <img
+width=117 height=88 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image010.jpg">   <img
+width=133 height=90 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image011.jpg"></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt'>      </span></b><b><span
+style='font-size:9.0pt;font-family:宋体'>图</span></b><b><span lang=EN-US
+style='font-size:9.0pt'>3                 </span></b><b><span style='font-size:
+9.0pt;font-family:宋体'>图</span></b><b><span lang=EN-US style='font-size:9.0pt'>4                 
+</span></b><b><span style='font-size:9.0pt;font-family:宋体'>图</span></b><b><span
+lang=EN-US style='font-size:9.0pt'>5                    </span></b><b><span
+style='font-size:9.0pt;font-family:宋体'>图</span></b><b><span lang=EN-US
+style='font-size:9.0pt'>6</span></b><b><span style='font-size:9.0pt;font-family:
+宋体'>、</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt'>&nbsp;</span></b></p>
+
+<h3><a name="_Toc346721051"><span lang=EN-US>1</span>、防爆机器人<span lang=EN-US>CCTV</span>检测系统功能特点</a></h3>
+
+<h3><span lang=EN-US style='font-size:12.0pt;color:red'>(1)</span><span
+style='font-size:12.0pt'>爬行车运行状态提示及安全制动：</span></h3>
+
+<p class=MsoListParagraph style='margin-left:42.3pt;text-indent:-21.0pt;
+line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%'>(a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>防侧翻提示提示：如下图红色标识，当爬行车在管道内部行走时，红色标识区域内的车体前后及左右姿态会实时模拟在管道内部的状态，图形化提示窗口，更加醒目。</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.3pt;text-indent:-21.0pt;
+line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%'>(b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>升降平台高度提示：爬行车在管道内部调整摄像头高度时，需要密切的关注升降平台的高度，以避免在小管道内，摄像头已触及管道顶部而升降架还在升高，造成的设备故障，或卡在管道内部。</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.3pt;text-indent:-21.0pt;
+line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%'>(c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>安全制动：爬行车在管道内部行走，当车体的左右倾斜角度大于系统设置的最大安全角度时，系统会红色提示并自动对爬行器进行制动，禁止前行，直至将倾斜角度调整至安全角度以内，系统自动解锁，怕行车方可继续前进。</span></p>
+
+<p class=MsoNormal align=left style='margin-top:7.8pt;margin-right:0cm;
+margin-bottom:7.8pt;margin-left:0cm;text-align:left;text-indent:23.65pt'><span
+lang=EN-US><img width=555 height=350 id="图片 33"
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image012.jpg"></span></p>
+
+<h3><span lang=EN-US style='font-size:12.0pt'>(2)</span><span style='font-size:
+12.0pt'>检测过程录像并记录缺陷和缺陷描述功能：</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>现场发现问题，立即暂停录像。抓拍图片，并进行缺陷描述。抓拍完成后结束暂停，恢复正常检测录像。后期制作报告时不用再次进行缺陷判读。</span></p>
+
+<p class=MsoNormal align=left style='margin-top:7.8pt;margin-right:0cm;
+margin-bottom:7.8pt;margin-left:0cm;text-align:left;text-indent:27.0pt'><span
+lang=EN-US style='font-size:12.0pt;font-family:宋体'><img width=551 height=361
+id="图片框 33" src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image013.jpg"
+alt="2_现场发现问题-立即暂停录像_抓拍并进行缺陷描述"></span></p>
+
+<h3><span style='font-size:12.0pt'>（<span lang=EN-US>3</span>）现场<span
+lang=EN-US>GPS</span>数据采集定位功能：</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%'>   </span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>在遥控器上安装</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>GPS</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>模块。用无线串口模块控制打开</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>/</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>关闭</span><span lang=EN-US style='font-size:12.0pt;line-height:
+150%'>GPS</span><span style='font-size:12.0pt;line-height:150%;font-family:
+宋体'>通信端口，读取</span><span lang=EN-US style='font-size:12.0pt;line-height:150%'>GPS</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>数据。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%'>   </span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>后期在检测报告制作时，可将采集的地理坐标标注在地图上，方便查看。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:宋体'><img width=598 height=386 id="图片 75"
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image014.jpg" alt="1_现场GPS数据采集定位功能"></span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US><img width=598
+height=353 id="图片 76" src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image015.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US>&nbsp;</span></p>
+
+<h3><span style='font-size:12.0pt;color:red'>（<span lang=EN-US>4</span>）</span><span
+style='font-size:12.0pt'>现场缺陷图片位置影像索引功能：</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>抓拍到的缺陷图片，在视频回放时会显示在视频窗口下方。点击每张缺陷图片，可以将视频定位在相对应的位置进行回放。数据量大时方便查看缺陷，节省时间及工作量。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:宋体'><img width=582 height=406 id="图片框 34"
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image016.jpg" alt="3_现场缺陷位置图片索引"></span></p>
+
+<h3><span style='font-size:12.0pt'>（<span lang=EN-US>5</span>）排水管道纵向起伏剖面图：</span></h3>
+
+<p class=1 align=left style='text-align:left;text-indent:0cm'><span lang=EN-US
+style='font-size:12.0pt;font-family:宋体'>    </span><span style='font-size:12.0pt;
+font-family:宋体'>爬行车体内置倾角传感器，在管道内部行走检测时同时采集管道内部的坡度，最后根据采集的数据，软件自动绘制纵向起伏图，以此来判断管道的排水流畅性。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US><img width=579
+height=338 id="图片 4" src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image017.jpg"></span></p>
+
+<h3><span lang=EN-US style='font-size:12.0pt;color:red'>(6) </span><span
+style='font-size:12.0pt'>收线车配备有移动轮，便于现场移动，并且支持发电机和蓄电模块两种供电方式，收线车内置聚合物锂电，无需任何外接电源即可连续工作
+<span lang=EN-US>6-8</span>个小时，更加便携且保持了安静。</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:48.0pt;line-height:150%'><span
+style='position:relative;z-index:251656704'><span style='left:0px;position:
+absolute;left:476px;top:-1359px;width:71px;height:39px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=71 height=39 style='vertical-align:top'><span style='position:absolute;
+  left:0pt;z-index:251656704'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal><span style='font-size:7.5pt;font-family:宋体'>图一</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span></span><img width=164 height=98
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image018.png" align=left hspace=18><span
+lang=EN-US><img width=162 height=146 id="图片 1"
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image019.jpg">          </span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;font-family:幼圆;color:red'>(7)</span></b><b><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:幼圆'> </span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:幼圆'>配备无线控制单元，操作简单（图一）。</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:幼圆'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;font-family:幼圆'>(8) </span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:幼圆'>爬行单元可无级变速控制，想快就快、想慢就慢，操作灵活、方便。</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:幼圆'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;font-family:幼圆'>(9) </span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:幼圆'>电动升降机构</span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:幼圆;color:navy'><img
+width=184 height=155 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image020.png">        
+<img width=198 height=114 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image021.png"></span></p>
+
+<p class=MsoNormal style='text-indent:47.25pt;line-height:150%'><span
+style='line-height:150%;font-family:幼圆;color:black'>升降架升起<span lang=EN-US>                            
+</span>升降架落下</span></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:24.1pt;text-indent:-24.1pt'><b><span lang=EN-US style='font-size:
+12.0pt;font-family:幼圆'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm'><b><span lang=EN-US style='font-size:12.0pt;font-family:幼圆;
+color:black'>(10) </span></b><b><span style='font-size:12.0pt;font-family:幼圆;
+color:black'>后置倒车影像系统和后视光源（图二）</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-indent:24.1pt'><span style='position:relative;z-index:
+251657728'><span style='left:0px;position:absolute;left:393px;top:-1504px;
+width:65px;height:45px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=65 height=45 style='vertical-align:top'><span style='position:absolute;
+  left:0pt;z-index:251657728'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal><span style='font-size:7.5pt;font-family:宋体'>图三</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span></span><span style='position:relative;z-index:251661824'><span
+style='left:0px;position:absolute;left:91px;top:-1504px;width:66px;height:43px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=66 height=43 style='vertical-align:top'><span style='position:absolute;
+  left:0pt;z-index:251661824'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal><span style='font-size:7.5pt;font-family:宋体'>图二</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span></span><span lang=EN-US><img width=158 height=91
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image022.jpg">        <img width=169
+height=109 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image023.jpg"></span></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-indent:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm'><b><span lang=EN-US style='font-size:12.0pt;font-family:幼圆'>(11)</span></b><b><span
+style='font-size:12.0pt;font-family:幼圆'>强力辅助照明光源（图三）</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;font-family:
+幼圆'>(12)</span></b><b><span style='font-size:12.0pt;font-family:幼圆'>管道机器人在实际的应用当中，爬行器的动力决定了在管道内的越障能力，防水性能决定着爬行器的使用寿命。我公司管道机器人驱动电机采用瑞士进口电机，驱动力更强且寿命比普通电机长<span
+lang=EN-US>3-5</span>年；爬行器车身采用<span lang=EN-US>CNC</span>加工技术，用整块航空铝材刀铣而成，加工精度高，保证了机器的密封性能，符合<span
+lang=EN-US>EXPz</span>Ⅱ<span lang=EN-US>T6</span>防爆标准，防护等级：<span lang=EN-US>IP68</span>，我公司也对此两项关键性能做了相应的测试。</span></b></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='position:relative;z-index:251660800'><span
+style='left:0px;position:absolute;left:39px;top:-1489px;width:651px;height:
+51px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=651 height=51 style='vertical-align:top'><span style='position:
+  absolute;left:0pt;z-index:251660800'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal style='text-indent:31.6pt'><b><span style='font-family:
+    宋体'>爬行器</span><span lang=EN-US>30</span></b><b><span style='font-family:
+    宋体'>°负重爬坡测试</span><span lang=EN-US>                            </span></b><b><span
+    style='font-family:宋体'>爬行器防水性能测试</span></b></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span></span><span lang=EN-US><img width=303 height=173
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image024.jpg">    <img width=238
+height=173 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image025.jpg"></span></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:24.1pt;text-indent:-24.1pt'><b><span lang=EN-US style='font-size:
+12.0pt;font-family:幼圆'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm'><b><span lang=EN-US style='font-size:12.0pt;font-family:幼圆'>(13)</span></b><b><span
+style='font-size:12.0pt;font-family:幼圆'>系统采用即停按钮设计，有效保护系统，避免意外损坏。</span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:7.8pt;margin-right:0cm;
+margin-bottom:7.8pt;margin-left:0cm;text-align:center;text-indent:27.1pt'><span
+style='position:relative;z-index:251650560'><span style='left:0px;position:
+absolute;left:79px;top:-1492px;width:124px;height:43px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=124 height=43 bgcolor=white style='vertical-align:top;background:
+  white'><span style='position:absolute;left:0pt;z-index:251650560'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:黑体;color:red'>急停按钮</span></p>
+    </div>
+    </td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span></span><span style='position:relative;z-index:251651584'><span
+style='left:0px;position:absolute;left:185px;top:-1522px;width:97px;height:
+49px'><img width=78 height=39
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image026.png"></span></span><b><span
+lang=EN-US style='font-size:12.0pt;font-family:幼圆'><img width=165 height=271
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image027.jpg"></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-size:
+14.0pt;font-family:黑体'>选配泥土水质采样扩展功能：</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><img
+width=555 height=241 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image028.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=zh-CN>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=zh-CN>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=zh-CN>&nbsp;</span></p>
+
+<h2><a name="_Toc346721058"><span lang=EN-US>2</span>、<span lang=EN-US>
+SINGA300</span>防爆机器人<span lang=EN-US>CCTV</span>检测系统</a>技术参数</h2>
+
+<h3><a name="_Toc346721059"></a><a name="_【附件一】：SD1090型工业全方位高清彩色摄像机__（或称摄像单元）"></a>【附件一】：<span
+lang=EN-US>SD1090</span>型工业全方位高清彩色摄像机（或称摄像单元）</h3>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><img width=210 height=142
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image029.jpg" align=left hspace=18><span
+style='font-family:幼圆'>【主要参数及特点】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><a name="OLE_LINK1"><span style='font-family:幼圆'>◆<span
+lang=EN-US> 540</span>线高分辨率彩色图像传感器，<span lang=EN-US>N/P</span>制可选；</span></a></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆<span lang=EN-US> 120</span>倍变倍系统，<span
+lang=EN-US>10</span>倍光学变焦，<span lang=EN-US>12</span>倍数字变焦，自动聚功能；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 轴向<span lang=EN-US>360</span>°旋转，水平<span
+lang=EN-US>180</span>°旋转；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 蓝宝石耐磨视窗镜面；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 长寿命精密滑环，连续旋转可达<span
+lang=EN-US>20000</span>小时以上；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><img width=218 height=142
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image030.jpg" align=left hspace=18><span
+style='font-family:幼圆'>◆<span lang=EN-US> 4</span>颗高亮度<span lang=EN-US>LED</span>主光源；采用<span
+lang=EN-US>10</span>级逐级调光控制 ；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 自动水平、垂直角度一键复位功能；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 内置气体压力传感器；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 防护等级：<span lang=EN-US>IP68 
+</span>水下<span lang=EN-US>10</span>米工作；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 工作温度：<span lang=EN-US>-10</span></span><span
+style='font-family:宋体'>～</span><span lang=EN-US style='font-family:幼圆'>55</span><span
+style='font-family:幼圆'>℃；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 材料：航空铝合金；</span><span
+lang=EN-US style='font-family:幼圆'> </span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:17.85pt'><span style='font-family:幼圆'>【适用系统】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:17.85pt'><span lang=EN-US style='font-family:幼圆'>SINGA300</span><span
+style='font-family:幼圆'>、<span lang=EN-US>SINGA350</span>、<span lang=EN-US>SINGA800</span></span><a
+name="_Toc346721060"></a><a name="_【附件二】：SD9902A型轮式运动搭载平台"></a></p>
+
+<h3><img width=346 height=231
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image031.jpg" align=left hspace=18>【附件二】：<span
+lang=EN-US>SD9902A</span>型轮式运动搭载平台</h3>
+
+<p class=MsoNormal align=left style='margin-left:31.5pt;text-align:left;
+text-indent:-31.5pt;line-height:150%'><span style='line-height:150%;font-family:
+幼圆'>【主要参数及特点】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 适应管径：</span><span
+style='font-size:12.0pt;font-family:宋体'>Φ</span><span lang=EN-US
+style='font-family:幼圆'>300mm</span><span lang=EN-US style='font-family:宋体'>—</span><span
+style='font-size:12.0pt;font-family:黑体'>Φ</span><span lang=EN-US
+style='font-family:幼圆'>2000mm</span><span style='font-family:幼圆'>。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 六轮驱动，搭载≤<span
+lang=EN-US>70kg,</span>可左右原地转弯，爬坡能力≤<span lang=EN-US>30;</span></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:15.75pt;text-indent:-15.75pt'><span style='font-family:幼圆'>◆
+可安装不同规格轮胎；标配</span><span style='font-size:12.0pt;font-family:黑体'>Φ</span><span
+lang=EN-US style='font-family:幼圆'>130mm</span><span style='font-family:幼圆'>、</span><span
+style='font-size:12.0pt;font-family:黑体'>Φ</span><span lang=EN-US
+style='font-family:幼圆'>230mm</span><span style='font-family:幼圆'>轮胎。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:15.75pt;text-indent:-15.75pt'><span style='font-family:幼圆'>◆
+内置气体压力传感器，自动检测车体、摄像系统、升降系统内部气体压力，并实时向后端设备传送数据，并能自动判断和处理异常，确保设备及工作环境的安全；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 具备后视摄像单元，有效保证安全倒车。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 配备斜角传感器，自动检测车体倾斜角度，校正精度<span
+lang=EN-US>0.5</span>；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><img width=244 height=139
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image032.jpg" align=left hspace=18><span
+style='font-family:幼圆'>◆ 防护标准：<span lang=EN-US>IP68  </span>水下<span lang=EN-US>10</span>米工作；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 工作温度：<span lang=EN-US>-10</span></span><span
+style='font-family:宋体'>～</span><span lang=EN-US style='font-family:幼圆'>55</span><span
+style='font-family:幼圆'>℃</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 材料：航空铝、黄铜</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 重量：<span lang=EN-US>27
+Kg</span></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 结构尺寸：大轮<span lang=EN-US>629*367*230/523mm</span>（升起）</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span lang=EN-US style='font-family:幼圆'>             </span><span
+style='font-family:幼圆'>小轮<span lang=EN-US>629*190*180/420mm</span>（升起）</span></p>
+
+<h3 align=left style='text-align:left'><img width=178 height=188
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image033.jpg" align=left hspace=18><a
+name="_Toc346721061"></a><a name="_【附件三】：SD9991F型车载式手动收线单元"></a>【附件三】：<span
+lang=EN-US>SD9991E</span>型车载式手动收线单元</h3>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>【主要参数及特点】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 手动排线，手动<span lang=EN-US>/</span>电动收线，，采用标准接口连接不同的车体；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 装配线缆类型：复合电缆，采用专业特种线缆，具有防水、防油、</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm;text-indent:15.75pt'><span style='font-family:幼圆'>耐磨、耐腐蚀等功能；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 装配线缆长度<span lang=EN-US>:</span>复合电缆：<span
+lang=EN-US>0</span></span><span style='font-family:宋体'>～</span><span
+lang=EN-US style='font-family:幼圆'>150m</span><span style='font-family:幼圆'>（标配<span
+lang=EN-US>100m</span>）</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 采用便携拉杆设计，配备万向轮和刹车装置，便于移动与固定；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 手动排线机构，配备线缆清洁刷，可实现收线同时即时清理。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 设有紧急停止按钮，确保设备安全；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 配备电子计米器，精确定位距离，数据直接显示在屏幕上；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 工作温度：<span lang=EN-US>-10</span></span><span
+style='font-family:宋体'>～</span><span lang=EN-US style='font-family:幼圆'>55</span><span
+style='font-family:幼圆'>℃</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 主要材料：航空铝材和高强度<span
+lang=EN-US>PC</span></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 结构尺寸：<span lang=EN-US>70cm</span>×<span
+lang=EN-US>44cm</span>×<span lang=EN-US>48cm</span></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>【适用系统】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm;text-indent:31.5pt'><span style='font-family:幼圆'>适用于所有<span
+lang=EN-US>SINGA</span>系列爬行检测机器人系统。</span></p>
+
+<h3><a name="_Toc346721063"></a><a name="_【附件五】：SD9992DII型智能控制影像录制处理终端"></a>【附件四】：<span
+lang=EN-US>SD9992DII</span>型智能控制影像录制处理终端</h3>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>【主要参数及特点】<span lang=EN-US> 
+</span></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>智能显示控制终端，内置爬行器控制系统、倾斜角度自动检测系统、安全气压检测系统。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>采用图形化人机交互界面，可直观显示设备在管道内的实时运行状态，便于操作人员实时掌握检测数据。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>控制界面有：图像视窗、内部压力、车辆运行状态、距离、速度、倾斜角度及模拟控制键盘等</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>控制功能：对车体运行、镜头旋转、灯光调节等进行控</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><img width=200 height=180
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image034.png" align=left hspace=18><span
+style='font-family:幼圆'>显示屏：<span lang=EN-US>12.1</span>寸工业级高亮触摸液晶屏，阳光下可视</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>采用工业级主板，双核<span lang=EN-US>CPU, </span>运行速度快<span
+lang=EN-US>;</span></span><span lang=EN-US> </span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:幼圆'>60G</span><span
+style='font-family:幼圆'>固态硬盘，抗震能力强</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>具备<span lang=EN-US>AV</span>输出、双网卡、<span
+lang=EN-US>USB</span>等接口。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>工作温度：<span lang=EN-US>-10</span></span><span
+style='font-family:宋体'>～</span><span lang=EN-US style='font-family:幼圆'>55</span><span
+style='font-family:幼圆'>℃</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>材料：航空铝</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:25.1pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:幼圆'>◆<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:幼圆'>尺寸：<span lang=EN-US>445mm</span>×<span
+lang=EN-US>420mm</span>×<span lang=EN-US>160mm</span></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>【适用系统】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm;text-indent:31.5pt'><span style='font-family:幼圆'>适用于所有<span
+lang=EN-US>SINGA</span>系列爬行机器人检测系统。</span></p>
+
+<h3><img width=182 height=122
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image035.jpg" align=left hspace=18><a
+name="_Toc346721064"></a><a name="_【附件六】：SD9993C型无线控制单元"></a>【附件五】：<span
+lang=EN-US>SD9993C</span>型无线控制单元</h3>
+
+<p class=MsoNormal style='line-height:150%'><span style='line-height:150%;
+font-family:幼圆'>【主要参数及特点】</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 控制方式：无线控制，有效控制距离：<span
+lang=EN-US>10</span>米。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 操作方式：摇杆<span lang=EN-US>+</span>旋钮<span
+lang=EN-US>+</span>按键</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 自由控制车速。</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 内置<span lang=EN-US>GPS</span>模块；</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 控制功能<span lang=EN-US>:</span>爬行单元：前进、后退、转弯、升降</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><img width=195 height=214
+src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image036.jpg" align=left hspace=18><span
+style='font-family:幼圆'>◆ 摄像单元：变倍、聚焦、旋转、自动复位、灯光、前后摄像机切换</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 收线单元：收<span lang=EN-US>/</span>放线、计米</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 供电方式：内置锂电池，配备专用充电器</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 工作温度：<span lang=EN-US>-10</span></span><span
+style='font-family:宋体'>～</span><span lang=EN-US style='font-family:幼圆'>55</span><span
+style='font-family:幼圆'>℃</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 材料：航空铝</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>◆ 尺寸：<span lang=EN-US>240*125*43mm</span>（<span
+lang=EN-US>83mm</span>）</span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:0cm'><span style='font-family:幼圆'>【适用系统】</span></p>
+
+<p class=MsoNormal><span lang=EN-US>      </span><span style='font-family:宋体'>适用于所有</span><span
+lang=EN-US>SINGA</span><span style='font-family:宋体'>系列爬行机器人检测系统。</span><a
+name="_Toc346721052"></a><a name="_Toc346266675"></a></p>
+
+<h3><span lang=EN-US>&nbsp;</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h3 style='margin-left:0cm;text-indent:0cm'><span lang=EN-US>3、</span>系统配置简介：</h3>
+
+<h2 style='margin-left:21.0pt;text-indent:-21.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:幼圆'>（1）<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:幼圆'>产品标配：</span></h2>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:幼圆'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=588
+ style='width:441.35pt;margin-left:-3.6pt;border-collapse:collapse;border:none'>
+ <tr style='height:27.95pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;background:silver;
+  padding:0cm 5.4pt 0cm 5.4pt;height:27.95pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='line-height:150%;font-family:幼圆;color:#333333'>序号</span></b></p>
+  </td>
+  <td width=132 style='width:98.7pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:27.95pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='line-height:150%;font-family:幼圆;color:#333333'>产品名称</span></b></p>
+  </td>
+  <td width=104 style='width:77.95pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:27.95pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='line-height:150%;font-family:幼圆'>图片</span></b></p>
+  </td>
+  <td width=85 style='width:63.8pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:27.95pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='line-height:150%;font-family:幼圆;color:#333333'>型号</span></b></p>
+  </td>
+  <td width=66 style='width:49.6pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:27.95pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='line-height:150%;font-family:幼圆;color:#333333'>数量</span></b></p>
+  </td>
+  <td width=142 style='width:106.3pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:27.95pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:幼圆;color:#333333'>备注</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:46.85pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.1</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>工业全方位</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>彩色摄像机</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆;color:#333333'><img
+  width=76 height=58 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image037.jpg"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>SD1090</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1</span><span
+  style='line-height:150%;font-family:幼圆'>个</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>防护等级：<span lang=EN-US>IP68</span></span></p>
+  </td>
+ </tr>
+ <tr style='height:46.85pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.2</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>智能轮式运动机构</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>（爬行器车体）</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆;color:#333333'><img
+  width=82 height=66 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image038.jpg"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>SD9902A</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1</span><span
+  style='line-height:150%;font-family:幼圆'>套</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>电动升降</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>(</span><span style='font-family:幼圆'>不含轮胎<span
+  lang=EN-US>)</span></span></p>
+  </td>
+ </tr>
+ <tr style='height:46.9pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:46.9pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.3</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.9pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>智能控制影像录制</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'> </span><span style='font-family:幼圆'>处理终端</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.9pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'><img width=89 height=78
+  src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image039.jpg"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.9pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>SD9992DII</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.9pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1</span><span
+  style='line-height:150%;font-family:幼圆'>个</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:46.9pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>标配<span lang=EN-US>60G</span>固态硬盘</span></p>
+  </td>
+ </tr>
+ <tr style='height:62.3pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:62.3pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.4</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:62.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>便携式收线车</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:62.3pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'><img width=76 height=86
+  src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image040.png"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:62.3pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>SD9991E</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:62.3pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1</span><span
+  style='line-height:150%;font-family:幼圆'>部</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:62.3pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>含计米器</span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>自动排线</span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>手动收线</span></p>
+  </td>
+ </tr>
+ <tr style='height:38.35pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.5</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>手持无线遥控盒</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'><img width=70 height=43
+  src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image041.png"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>SD9993C</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1</span><span
+  style='line-height:150%;font-family:幼圆'>个</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>含充电器（<span lang=EN-US>5V</span>）</span></p>
+  </td>
+ </tr>
+ <tr style='height:38.35pt'>
+  <td width=60 rowspan=2 style='width:45.0pt;border:solid gray 1.5pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.6</span></p>
+  </td>
+  <td width=132 rowspan=2 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>轮胎</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆;color:#003300'><img
+  width=38 height=38 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image042.jpg"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>230mm</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>4</span><span
+  style='line-height:150%;font-family:幼圆'>个</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#003300'>含轮毂</span></p>
+  </td>
+ </tr>
+ <tr style='height:38.35pt'>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'><img width=43 height=32
+  src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image043.png"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>130mm</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>6</span><span style='font-family:幼圆'>个</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆;color:#003300'>含轮毂</span></p>
+  </td>
+ </tr>
+ <tr style='height:54.7pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.7</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>鼠标、键盘</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆;color:#333333'><img
+  width=69 height=56 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image044.jpg"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>无线</span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal style='text-indent:5.25pt;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1</span><span
+  style='line-height:150%;font-family:幼圆'>套</span></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border-top:none;border-left:
+  none;border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:
+  0cm 5.4pt 0cm 5.4pt;height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>迷你小键盘</span></p>
+  </td>
+ </tr>
+ <tr style='height:54.7pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.8</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>抗拉</span><span style='font-family:幼圆'>复合电缆</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>&nbsp;</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>&nbsp;</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>120m</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:54.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>可选<span lang=EN-US>150m           </span>特殊订制：<span
+  lang=EN-US>0-220m</span></span></p>
+  </td>
+ </tr>
+ <tr style='height:38.35pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>1.9</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>专用电源适配器</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'><img width=68 height=51
+  src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image045.png"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:12.0pt;font-family:幼圆'>&nbsp;</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>1</span><span style='font-family:幼圆'>个</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>220V</span><span style='font-family:幼圆'>转<span
+  lang=EN-US>48V</span>，<span lang=EN-US>12.5A</span></span></p>
+  </td>
+ </tr>
+ <tr style='height:38.35pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>1.10</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>爬行机器人</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>控制系统<span lang=EN-US> V1.0</span></span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>&nbsp;</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>&nbsp;</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>1</span><span style='font-family:幼圆'>套</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>嵌入式</span></p>
+  </td>
+ </tr>
+ <tr style='height:38.35pt'>
+  <td width=60 style='width:45.0pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>1.11</span></p>
+  </td>
+  <td width=132 style='width:98.7pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>后视摄像机模组</span></p>
+  </td>
+  <td width=104 style='width:77.95pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'><img width=73 height=56
+  src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image046.jpg"></span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>&nbsp;</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆'>1</span><span style='font-family:幼圆'>套</span></p>
+  </td>
+  <td width=142 style='width:106.3pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.35pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆'>含后视光源</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc2794"></a><a name="_Toc356822795"></a><a name="_Toc355768952"><span
+lang=EN-US style='font-size:12.0pt;font-family:幼圆'>&nbsp;</span></a></h2>
+
+<h2><span style='font-size:12.0pt'>软件部分：</span></h2>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:23.85pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:23.85pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  style='font-size:10.5pt;font-family:幼圆'>序号</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:23.85pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  style='font-size:10.5pt;font-family:幼圆'>软件名称</span></b></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:23.85pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  style='font-size:10.5pt;font-family:幼圆'>应用部件<span lang=EN-US>(</span>型号<span
+  lang=EN-US>)</span></span></b></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:23.85pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  style='font-size:10.5pt;font-family:幼圆'>版本号</span></b></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>1</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 style='text-indent:5.15pt'><span lang=EN-US style='font-size:10.5pt;
+  font-family:幼圆'>SD1090</span><span style='font-size:10.5pt;font-family:幼圆'>配爬行器使用解码程序</span></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD1090</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V1.0</span></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>2</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 style='text-indent:5.15pt'><span lang=EN-US style='font-size:10.5pt;
+  font-family:幼圆'>SD9902A</span><span style='font-size:10.5pt;font-family:幼圆'>车体解码板程序</span></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD9902A</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V1.0</span></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>3</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 style='text-indent:5.15pt'><span lang=EN-US style='font-size:10.5pt;
+  font-family:幼圆'>SD9902A</span><span style='font-size:10.5pt;font-family:幼圆'>辅助光源<span
+  lang=EN-US>LED</span>驱动程序</span></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD9902A</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V1.0</span></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>4</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 style='text-indent:5.15pt'><span lang=EN-US style='font-size:10.5pt;
+  font-family:幼圆'>SD9991E+ </span><span style='font-size:10.5pt;font-family:
+  幼圆'>收线车计米板计米程序</span></h2>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:5.25pt'><b><span
+  lang=EN-US style='font-family:幼圆'>SD9992DII</span></b><b><span
+  style='font-family:幼圆'>控制器软件</span></b></p>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD9991E+</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V1.0</span></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>5</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 style='text-indent:5.15pt'><span lang=EN-US style='font-size:10.5pt;
+  font-family:幼圆'>SD9993C</span><span style='font-size:10.5pt;font-family:幼圆'>操作盒主<span
+  lang=EN-US>IC</span>程序</span></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD9993C</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V1.0</span></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>6</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 style='text-indent:5.15pt'><span lang=EN-US style='font-size:10.5pt;
+  font-family:幼圆'>SD9993C</span><span style='font-size:10.5pt;font-family:幼圆'>操作盒辅助中断程序</span></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD9993C</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V1.0</span></h2>
+  </td>
+ </tr>
+ <tr style='height:26.0pt'>
+  <td width=54 style='width:40.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><b><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>7</span></b></h2>
+  </td>
+  <td width=239 style='width:179.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.25pt'><span
+  style='font-size:10.5pt;font-family:幼圆'>嵌入式软件：施罗德管道爬行机器人控制系统软件</span></h2>
+  </td>
+  <td width=146 style='width:109.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>SD9992DII</span></h2>
+  </td>
+  <td width=119 style='width:89.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.0pt'>
+  <h2 align=center style='text-align:center;text-indent:5.15pt'><span
+  lang=EN-US style='font-size:10.5pt;font-family:幼圆'>V5.2</span></h2>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2 align=left style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.0pt;margin-bottom:.0001pt;text-align:left;text-indent:-21.0pt'><span
+lang=EN-US style='font-size:12.0pt;font-family:幼圆'>（2）<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:幼圆'>产品工具及附件：</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:31.2pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;background:silver;
+  padding:0cm 5.4pt 0cm 5.4pt;height:31.2pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:幼圆;color:#333333'>序号</span></b></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:31.2pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:幼圆;color:#333333'>产品名称</span></b></p>
+  </td>
+  <td width=66 style='width:49.6pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:31.2pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:幼圆;color:#333333'>数量</span></b></p>
+  </td>
+  <td width=217 style='width:163.0pt;border:solid gray 1.5pt;border-left:none;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt;height:31.2pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:幼圆;color:#333333'>备注</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:31.25pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.1</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>出口免检木箱<span lang=EN-US>           </span></span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2</span><span style='font-family:幼圆;
+  color:#333333'>个</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>车体<span lang=EN-US>+</span>控制器：<span
+  lang=EN-US>625*635*580mm </span></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>收线车：<span lang=EN-US>835*465*720mm</span></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>内用珍珠棉作为缓冲</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.1pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:27.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.2</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:27.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>专用工具</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:27.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>套</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:27.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>含<span lang=EN-US>30</span>套筒、<span
+  lang=EN-US>M4</span>、<span lang=EN-US>M5</span>内六角扳手各<span lang=EN-US>1</span>个</span></p>
+  </td>
+ </tr>
+ <tr style='height:23.3pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:23.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.3</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:23.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>镜头清洁布</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:23.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>片</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:23.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.7pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.4</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>机头防尘盖</span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>个</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.7pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.5</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>收线车<span lang=EN-US>16</span>芯公头防尘盖</span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>个</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:31.25pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.6</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>下井吊钩</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>个</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:31.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:20.25pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.7</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>螺丝（带弹簧垫片）</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>20</span><span style='font-family:幼圆;
+  color:#333333'>颗</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>20</span><span style='font-family:幼圆;
+  color:#333333'>颗</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>M6</span><span lang=EN-US
+  style='color:#333333'>×</span><span lang=EN-US style='font-family:幼圆;
+  color:#333333'>20</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>M5</span><span lang=EN-US
+  style='color:#333333'>×</span><span lang=EN-US style='font-family:幼圆;
+  color:#333333'>12</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.6pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:27.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.8</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:27.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>O</span><span style='font-family:幼圆;
+  color:#333333'>型圈</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:27.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>5</span><span style='font-family:幼圆;
+  color:#333333'>个</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>10</span><span style='font-family:幼圆;
+  color:#333333'>个</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:27.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>28×2</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>32×1.5</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.5pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.9</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>装箱清单</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>份</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.5pt'>
+  <td width=52 style='width:39.15pt;border:solid gray 1.5pt;border-top:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>2.10</span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>三包凭证</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-family:幼圆;color:#333333'>1</span><span style='font-family:幼圆;
+  color:#333333'>份</span></p>
+  </td>
+  <td width=217 style='width:163.0pt;border-top:none;border-left:none;
+  border-bottom:solid gray 1.5pt;border-right:solid gray 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:幼圆;color:#333333'>产品说明书、合格证与保修卡</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h2><b><span lang=EN-US style='font-size:12.0pt;font-family:幼圆'>&nbsp;</span></b></h2>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:幼圆'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:幼圆'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>公司资质：</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;background:#E5E5E5'><img
+width=599 height=409 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image047.jpg"></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;background:#E5E5E5'><img
+width=599 height=409 src="SINGA300防爆型机器人CCTV检测系统资料2015.files/image048.jpg"></span></b></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1221 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>SINGA200智能爬行机器人配置表及技术参数</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:幼圆;
+	panose-1:2 1 5 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@幼圆";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:15.0pt;
+	font-family:黑体;
+	font-weight:normal;}
+h2
+	{mso-style-link:"标题 2 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:5.9pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+h3
+	{mso-style-link:"标题 3 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:14.0pt;
+	font-family:幼圆;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:宋体;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-link:"标题 3";
+	font-family:幼圆;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-link:"标题 2";
+	font-family:宋体;
+	font-weight:bold;}
+p.Style2, li.Style2, div.Style2
+	{mso-style-name:"_Style 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.4, li.4, div.4
+	{mso-style-name:标题4;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:幼圆;
+	color:#333333;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection7
+	{page:WordSection7;}
+@page WordSection8
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection8
+	{page:WordSection8;}
+@page WordSection9
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection9
+	{page:WordSection9;}
+@page WordSection10
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 74.3pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection10
+	{page:WordSection10;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><a name="_Toc346721037"><span lang=EN-US>&nbsp;</span></a></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2 align=center style='text-align:center;text-indent:8.85pt'><a
+name="_Toc357503726"></a><a name="_Toc353290646"><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></a></h2>
+
+<h2 align=center style='text-align:center;text-indent:8.85pt'><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></h2>
+
+<h2 align=center style='text-align:center;text-indent:8.85pt'><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></h2>
+
+<h2 style='text-indent:0cm'><a name="_Toc7003"><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>            SINGA200 B</span></a><span
+style='font-size:18.0pt;font-family:黑体'>功能爬行机器人系统</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:18.0pt;font-family:黑体'>产品技术说明</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:18.0pt;font-family:黑体'>华北区域总监</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:18.0pt;font-family:黑体'>刘斌</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>13598819029</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;font-family:黑体'>2016</span></b><b><span
+style='font-size:18.0pt;font-family:黑体'>年<span lang=EN-US>12 </span>月</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><a name="_Toc346721038"></a><a name="_Toc346721020"></a><a name="_Toc16457">一、</a><span
+lang=EN-US>SINGA200 B</span>图片及应用</h1>
+
+<h2 align=center style='text-align:center'><span lang=EN-US><img width=410
+height=293 id="图片 21" src="S200%20B%20产品技术说明.files/image001.jpg"></span></h2>
+
+<p class=MsoNormal style='text-indent:15.75pt'><span lang=EN-US>        </span></p>
+
+<p class=MsoNormal style='text-indent:103.5pt'><span lang=EN-US
+style='font-size:9.0pt'>     </span><span style='font-size:9.0pt;font-family:
+宋体'>（注：图片仅供参考，以实物为准）</span></p>
+
+<p class=MsoPlainText style='text-indent:24.0pt;line-height:22.0pt'><span
+style='font-size:12.0pt'>爬行机器人检测系统，是以智能轮式运动机构作为搭载平台，配备工业级高分辨率彩色摄像单元、运动姿态检测单元和智能控制影像录制处理终端，辅助强力照明光源和线缆卷收装置的高科技检测专用产品。</span></p>
+
+<p class=MsoPlainText style='text-indent:24.0pt;line-height:22.0pt'><span
+style='font-size:12.0pt'>根据应用场所需求，搭载热成像仪、声纳、机械手、树根切割机、毒气检测仪等等传感器或专用工具，实现对各种隐蔽空间、水下、易燃、易爆、辐射等高危场所进行实时影像检测、分析处理。<a
+name="_Toc32366"></a></span></p>
+
+<p class=MsoPlainText style='text-indent:24.0pt;line-height:22.0pt'><span
+style='font-size:12.0pt'>已广泛应用于管道检测、矿井检测勘探、隧道验收、地震搜救、消防救援、灾害援助、电力巡检、反恐排爆、军事侦查、高温、高辐射、有毒环境等领域。通过分析，出具专业报告，作为工程项目的检测、勘探、验收、养护、建设及投资等依据。</span></p>
+
+<p class=MsoPlainText style='line-height:22.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:幼圆'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>应用场所检测实例</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>     </span><span style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>城市地下管网检测<span lang=EN-US>  </span></span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+style='line-height:150%'>      <img width=222 height=97 id="图片 24"
+src="S200%20B%20产品技术说明.files/image002.jpg" alt=水下管道>     <img width=154
+height=98 id="图片 25" src="S200%20B%20产品技术说明.files/image003.jpg" alt=示意></span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>       </span><span style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>管网数据采集</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+style='line-height:150%;font-family:幼圆'>        <img width=118 height=91
+id="图片 26" src="S200%20B%20产品技术说明.files/image004.jpg"></span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>       </span><span style='font-size:
+12.0pt;line-height:150%;font-family:幼圆'>管道修复：推放封堵气囊</span></p>
+
+<p class=MsoNormal style='text-indent:27.1pt'><b><span lang=EN-US
+style='font-family:幼圆'>    <img width=134 height=92 id="图片 27"
+src="S200%20B%20产品技术说明.files/image005.jpg"></span></b></p>
+
+<p class=MsoNormal style='text-indent:31.2pt'><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<h1><span lang=EN-US style='font-size:12.0pt;font-family:幼圆'>        </span><span
+style='font-size:12.0pt;font-family:幼圆'>隧道、涵洞检测：</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>      <img width=169 height=141 id="图片 28"
+src="S200%20B%20产品技术说明.files/image006.jpg">   <img width=174 height=140
+id="图片 29" src="S200%20B%20产品技术说明.files/image007.jpg"></span></h1>
+
+<h1 align=center style='text-align:center'><span lang=EN-US style='font-size:
+14.0pt;color:red'>&nbsp;</span></h1>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><a name="_Toc31998"><span
+lang=EN-US>二、</span><span lang=EN-US>SINGA200</span>主要功能特点</a></h1>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>电动升降，升降高度<span
+lang=EN-US>210m</span></span></h3>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-family:Wingdings'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>12.1</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>寸工业级触摸智能控制终端</span></p>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>便携式设计，车体防倾覆、倾斜度实时监测</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>进口马达，四轮驱动，位移式转弯，动力强劲</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>整车防爆、防水、内置安全气压监测
+</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:
+normal'>SONY 530</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体;font-weight:normal'>线传感器，图像清晰</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>环形无影<span
+lang=EN-US>LED</span>复合光源，强力照明</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>支持中英文输入</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>无线控制，操作便捷</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-family:Wingdings;font-weight:normal'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>搭载能力：≤<span
+lang=EN-US>30KG</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;font-family:宋体;
+background:red'>&nbsp;</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:宋体;background:red'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:12.0pt;
+line-height:150%;font-family:幼圆'>图示：</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;font-family:幼圆'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-size:12.0pt;font-family:幼圆'>                     </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;font-family:幼圆'><img
+width=130 height=100 id="图片 17" src="S200%20B%20产品技术说明.files/image008.jpg"><b><img
+width=143 height=100 id="图片 18" src="S200%20B%20产品技术说明.files/image009.jpg"> <span
+style='color:black'><img width=126 height=100 id="图片 19"
+src="S200%20B%20产品技术说明.files/image010.jpg"> </span></b></span><span lang=EN-US
+style='font-family:幼圆;color:#333333'><img width=136 height=98 id="图片 20"
+src="S200%20B%20产品技术说明.files/image011.jpg"></span></p>
+
+<h3><a name="_Toc346721039"></a><a name="_Toc346269216"><span lang=EN-US
+style='font-size:9.0pt'>    </span></a><span lang=EN-US style='font-size:9.0pt'>1</span><span
+style='font-size:9.0pt'>：图像清晰<span lang=EN-US>            </span></span><span
+style='font-size:9.0pt'>图<span lang=EN-US>2</span>：爬坡能力 <span lang=EN-US>        </span></span><span
+style='font-size:9.0pt'>图<span lang=EN-US>3</span>：复合光源<span lang=EN-US>    </span></span><span
+lang=EN-US style='font-size:9.0pt'>    </span><span style='font-size:9.0pt'>图<span
+lang=EN-US>4</span>：无线操作盒</span><span style='font-size:9.0pt'>图</span></h3>
+
+<h1><a name="_Toc25505"><span lang=EN-US>&nbsp;</span></a></h1>
+
+<h1>三、<span lang=EN-US>SINGA200 B</span>主要技术指标</h1>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>适应<span
+lang=EN-US>Ø200-1500mm</span>管道</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:
+normal'>12.1</span><span style='font-size:12.0pt;line-height:150%;font-family:
+宋体;font-weight:normal'>寸工业级触摸智能控制终端，分辨率：<span lang=EN-US>1024*768</span></span></h3>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-size:12.0pt;font-family:Wingdings'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:宋体'>摄像头<span lang=EN-US>700</span>线，<span
+lang=EN-US>44</span>万像素，<span lang=EN-US>10</span>倍光学变焦，<span lang=EN-US>12</span>倍数字变焦；后置<span
+lang=EN-US>530</span>线倒车影像（可选配）</span></p>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>四轮驱动，马达功率<span
+lang=EN-US>:80W</span>直流电机</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>电动升降高度<span
+lang=EN-US>210mm</span></span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>爬坡能力≤<span
+lang=EN-US>35</span>°</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>辅助光源<span
+lang=EN-US>30W</span>，<span lang=EN-US>30-45</span>°角度</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>双轴倾角传感器，自定义报警倾斜角度（<span
+lang=EN-US>1-45</span>°角）</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>气体压力传感器，可充入<span
+lang=EN-US>8-12 PSI</span>干燥新鲜空气和氦气，预留标准充气孔</span></h3>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>支持<span
+lang=EN-US>130mm</span>、<span lang=EN-US>210mm</span>、<span lang=EN-US>230mm</span>等多种规格轮胎</span></h3>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>整车防爆，防爆标示：<span
+lang=EN-US>Ex Px IIc T4 Gb</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-family:Wingdings'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>防水、防护等级：<span
+lang=EN-US>IP68  </span>水下<span lang=EN-US>10</span>米工作</span></p>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>工作温度：<span
+lang=EN-US>-10-55</span>℃</span></h3>
+
+</div>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1>四、<span lang=EN-US>SINGA200 B</span>组成部分</h1>
+
+<h1 style='margin-left:21.0pt;text-indent:-21.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b><span lang=EN-US style='font-size:12.0pt;font-family:宋体'>SD1090</span></b><b><span
+style='font-size:12.0pt;font-family:宋体'>型工业全方位变焦彩色摄像机<span lang=EN-US>         </span></span></b></h1>
+
+<h1 style='margin-left:21.0pt;text-indent:-21.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b><span lang=EN-US style='font-size:12.0pt;font-family:宋体'>SD9902D</span></b><b><span
+style='font-size:12.0pt;font-family:宋体'>型智能轮式运动搭载平台</span></b></h1>
+
+<h1 style='margin-left:21.0pt;text-indent:-21.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b><span lang=EN-US style='font-size:12.0pt;font-family:宋体'>SD9991E</span></b><b><span
+style='font-size:12.0pt;font-family:宋体'>型车载收线车<span lang=EN-US>                        
+</span></span></b></h1>
+
+<h1 style='margin-left:21.0pt;text-indent:-21.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b><span lang=EN-US style='font-size:12.0pt;font-family:宋体'>SD9992F</span></b><b><span
+style='font-size:12.0pt;font-family:宋体'>型智能控制影像录制处理终端</span></b></h1>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>SD9993C</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>型无线控制器 </span><span
+lang=EN-US style='font-size:10.5pt;line-height:150%;font-weight:normal'>                        </span></h3>
+
+<h1><a name="_Toc1391"></a><a name="_Toc346721045"></a><a name="_Toc346269228"><span
+lang=EN-US style='font-size:14.0pt'>SD1090</span></a><span style='font-size:
+14.0pt'>型工业全方位变焦彩色摄像机</span> </h1>
+
+<p class=MsoNormal style='text-indent:89.65pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:幼圆'>           </span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><img
+width=146 height=132 src="S200%20B%20产品技术说明.files/image012.jpg" alt="IMG_256"></span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>产品主要技术参数</span></b></p>
+
+</div>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:幼圆'><br clear=all
+style='page-break-before:auto'>
+</span>
+
+<div class=WordSection4 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>SONY 530</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>线高分辨率彩色图像传感器，<span lang=EN-US>44</span>万像素，<span lang=EN-US>N/P</span>制可选</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>120</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>倍变倍，<span lang=EN-US>10</span>倍光学变焦，<span lang=EN-US>12</span>倍数字变焦，自动<span
+lang=EN-US>/</span>手动聚焦</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>镜头轴向<span
+lang=EN-US>360</span>°连续旋转，水平<span lang=EN-US>270</span>°翻转</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>内置倾角传感器，一键复位，图像自动水平居中</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>精密滑环，连续旋转可达<span
+lang=EN-US>20000</span>小时以上<span lang=EN-US>,</span>使用寿命长</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>蓝宝石耐磨镜面</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>主光源为<span
+lang=EN-US>4</span>颗高亮度<span lang=EN-US>LED</span>，辅光源为<span lang=EN-US>6</span>颗环形无影<span
+lang=EN-US>LED</span>，均为无级调光恒流控制 </span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>气体压力传感器，确保密封性</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>整车防爆，防爆标示：<span
+lang=EN-US>Ex Px IIc T4 Gb</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>防水、防护等级：<span
+lang=EN-US>IP68  </span>水下<span lang=EN-US>10</span>米工作</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>工作温度：<span
+lang=EN-US>-10-55</span>℃</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>材料：航空铝材</span></p>
+
+<p class=MsoNormal><a name="_Toc346721046"></a><a name="_Toc346269229"><span
+lang=EN-US>&nbsp;</span></a></p>
+
+<h1><a name="_Toc192"><span lang=EN-US style='font-size:14.0pt'>SD9902D</span></a><span
+style='font-size:14.0pt'>型智能轮式运动搭载平台</span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><img
+width=146 height=149 src="S200%20B%20产品技术说明.files/image013.jpg"></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'>     </span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'> </span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>产品主要技术参数</span></b></p>
+
+</div>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:幼圆'><br clear=all
+style='page-break-before:auto'>
+</span>
+
+<div class=WordSection5 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>电动升降，适应管径：<span
+lang=EN-US>Ø200mm</span>—<span lang=EN-US>1500mm</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>四轮驱动，前进、后退、左右原地转弯，爬坡能力≤<span
+lang=EN-US>35</span>°；搭载能力≤<span lang=EN-US>30KG</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>内置传感器，能自动检测车体、摄像系统、升降系统、内部气压等运行状态，实时传送数据，并自动判断异常，确保设备及工作环境的安全</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>配备倾角传感器，自动检测车体倾斜角度，校正精度<span
+lang=EN-US>0.5</span>°，防止车体侧翻</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>标准接口，多种轮胎可自由更换</span></p>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:Wingdings;
+font-weight:normal'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;font-weight:normal'>后置倒车影像系统以及后视光源（选配）</span></h3>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>整车防爆，防爆标示：<span
+lang=EN-US>Ex Px IIc T4 Gb</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>防水、防护标准：<span
+lang=EN-US>IP68</span>水下<span lang=EN-US>10</span>米工作</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>工作温度：<span
+lang=EN-US>-10-55</span>℃</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>材料：航空铝合金</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>重量：<span
+lang=EN-US>17 Kg</span></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection6 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>           </span></p>
+
+<h1><a name="_Toc346721048"></a><a name="_Toc346269231"></a><a name="_Toc31903"></a><a
+name="_Toc353789652"></a><a name="_【附件三】：SD9991E型管道机器人手动卷收线车(选配)"></a><a
+name="_【附件四】：SD9992F型智能显示控制终端"></a><span lang=EN-US style='font-size:14.0pt'>SD9991E</span><span
+style='font-size:14.0pt'>型车载收线车</span></h1>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.75pt;
+line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;
+font-family:幼圆'><img width=176 height=132 id="图片 47"
+src="S200%20B%20产品技术说明.files/image014.png" alt=SD9991F便携式收线车---红色></span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>产品主要技术参数</span></b></p>
+
+</div>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:幼圆'><br clear=all
+style='page-break-before:auto'>
+</span>
+
+<div class=WordSection7 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>自动排线，采用标准接口兼容不同车体，并配备线缆清洁刷，实现收线同时即时清理</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>便携式拉杆设计，配备万向轮和刹车装置，便于移动和固定</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>设有紧急停止按钮，确保设备安全</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>采用特种复合线缆，有增强保护层和护套，内置凯夫拉抗拉能力<span
+lang=EN-US>≤200KG</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>线缆标配<span
+lang=EN-US>120m</span>（可根据客户需求定做），具有防水、防油、耐磨、耐腐蚀等功能</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>配备电子计米器，具有记米清零功能，精确定位距离</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>标配<span
+lang=EN-US>AC 220V</span>供电；选配<span lang=EN-US>48V</span>聚合物锂电池</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>工作温度：<span
+lang=EN-US>-10-55</span>℃</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>主要材料：航空铝合金</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-family:Wingdings'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>结构尺寸：<span lang=EN-US>70cm</span>×<span
+lang=EN-US>40cm</span>×<span lang=EN-US>45cm</span></span><a name="_Toc23996"></a></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><span
+lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US style='font-size:14.0pt'>SD9992F</span><span
+style='font-size:14.0pt'>型智能控制影像录制处理终端</span></h1>
+
+<p class=4 align=center style='text-align:center'><span lang=EN-US><img
+width=163 height=163 id="图片 49" src="S200%20B%20产品技术说明.files/image015.png"
+alt=控制器></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'>     </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>产品主要技术参数</span></b></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>12.1</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>寸工业级液晶显示屏，显示分辨率：<span lang=EN-US>1024*768</span>，中文操作界面，阳光下可视</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection8 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>智能显示控制终端，内置爬行器控制系统、倾斜角度自动检测系统、安全气<span
+lang=EN-US>  </span>压检测系统</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>控制功能：对车体运行、镜头旋转、灯光调节等进行控制</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>智能显示控制终端，内置爬行器控制系统、倾斜角度自动检测系统、安全气<span
+lang=EN-US>  </span>压检测系统</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>人机交互界面，直观显示设备在管道内的实时运行状态，避免侧翻</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>界面显示：时间日期、项目名称、管道直径、材质、检测单位、内部压力、车辆运行状态、距离、速度、倾斜角度及模拟控制键盘等信息</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>界面控制和调节设备前、后、左右运行，镜头旋转，灯光亮度调节，拍照录像，文件编辑，图像设置等功能</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>内置<span
+lang=EN-US>60G</span>固态硬盘，抗震能力强</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>具备<span
+lang=EN-US>AV</span>输出、<span lang=EN-US>USB</span>及<span lang=EN-US>SD</span>卡等接口</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>工作温度：<span
+lang=EN-US>-10-55</span>℃</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>材料：航空铝</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>尺寸：<span
+lang=EN-US>45cm</span>×<span lang=EN-US>36cm</span>×<span lang=EN-US>14cm</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>&nbsp;</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection9 style='layout-grid:15.6pt'>
+
+<h3><a name="_Toc346721049"><span style='font-size:12.0pt;font-family:宋体'>控制软件功能特点</span></a></h3>
+
+<p class=Style2 style='text-indent:0cm;line-height:150%'><span lang=EN-US
+style='font-size:12.0pt;line-height:150%'>   </span><span style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>防侧翻报警提示</span></p>
+
+<h3><span lang=EN-US style='font-size:12.0pt'>   </span><span style='font-size:
+12.0pt;font-family:宋体;font-weight:normal'>管道缺陷描述功能</span></h3>
+
+<p class=MsoNormal align=left style='margin-top:7.8pt;margin-right:0cm;
+margin-bottom:7.8pt;margin-left:0cm;text-align:left'><span lang=EN-US
+style='font-size:12.0pt;font-family:宋体'>   </span><span style='font-size:12.0pt;
+font-family:宋体'><img width=333 height=218
+src="S200%20B%20产品技术说明.files/image016.jpg" alt="2_现场发现问题-立即暂停录像_抓拍并进行缺陷描述"></span></p>
+
+<h3><span lang=EN-US style='font-size:12.0pt'>   </span><span style='font-size:
+12.0pt;font-family:宋体;font-weight:normal'>现场</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;font-weight:normal'>GPS</span><span
+style='font-size:12.0pt;font-family:宋体;font-weight:normal'>数据采集定位功能</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US>    </span><img
+width=334 height=197 src="S200%20B%20产品技术说明.files/image017.jpg"></p>
+
+<h3><span lang=EN-US style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+font-weight:normal'>    </span><span style='font-size:12.0pt;font-family:宋体;
+font-weight:normal'>缺陷图片位置影像索引功能</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>    </span><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'><img width=330 height=230 id="图片 23"
+src="S200%20B%20产品技术说明.files/image018.jpg" alt="3_现场缺陷位置图片索引"></span></p>
+
+<h3><span lang=EN-US style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+font-weight:normal'>&nbsp;</span></h3>
+
+<h3><span lang=EN-US style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+font-weight:normal'>     </span><span style='font-size:12.0pt;font-family:宋体;
+font-weight:normal'>管道纵向起伏剖面图</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US>      </span><img
+width=329 height=192 src="S200%20B%20产品技术说明.files/image019.jpg"></p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><a name="_Toc8614"></a><a name="_Toc353789654"><span lang=EN-US
+style='font-size:14.0pt'>SD9993C</span></a><span style='font-size:14.0pt'>型无线控制</span><span
+style='font-size:14.0pt'>器</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:31.3pt;
+line-height:150%'><span lang=EN-US><img width=234 height=142
+src="S200%20B%20产品技术说明.files/image020.png" alt=93C></span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>产品主要技术参数</span></b></p>
+
+</div>
+
+<b><span lang=EN-US style='font-size:10.5pt;font-family:幼圆'><br clear=all
+style='page-break-before:auto'>
+</span></b>
+
+<div class=WordSection10 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>控制方式：无线遥控，具有<span
+lang=EN-US>1--8</span>个波段，有效控制距离：<span lang=EN-US>10</span>米</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>定位功能：内置<span
+lang=EN-US>GPS</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>操作方式：摇杆<span
+lang=EN-US>+</span>旋钮<span lang=EN-US>+</span>按键</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>控制功能<span
+lang=EN-US>: </span>前进、后退、转弯、变倍、聚焦、旋转、自动恢复水平、灯光、前后摄像机切换</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><img width=145 height=158
+src="S200%20B%20产品技术说明.files/image021.jpg" align=left hspace=15><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>供电方式：内置充电电池，配备专用充电器</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>工作温度：<span
+lang=EN-US>-10</span>～<span lang=EN-US>55</span>℃</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>材料：航空铝</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>尺寸：<span
+lang=EN-US>24cm</span>×<span lang=EN-US>12.5cm</span>×<span lang=EN-US>8.3cm</span></span></p>
+
+<h1><a name="_Toc6222"></a><a name="_Toc346269221"></a><a name="_Toc346721043"><span
+lang=EN-US>&nbsp;</span></a></h1>
+
+<h1><span lang=EN-US>&nbsp;</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><span lang=EN-US>五、</span><span
+lang=EN-US>SINGA200 B</span>可选配报告软件</h1>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:24.0pt;
+line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>Pipe&nbsp;vide</span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>管道影像检测报告数据管理软件是依据《<span lang=EN-US>CJJ181-2012</span>城镇排水管道检测与评估技术规程》规定的管道评估标准及方法开发的一款管道<span
+lang=EN-US>CCTV</span>检测数据管理及检测报告生成软件，此软件能够对管道视频进行回放、添加缺陷分析描述，并形成检测报告。管理软件可自动关联检测数据，并内置管道缺陷代码，可快速标注缺陷类型并自动生成一份管道<span
+lang=EN-US>CCTV</span>检测报告。<span lang=EN-US><br>
+Pipe&nbsp;vide</span>管道影像检测报告数据管理软件包括以下模块，可以更好的管理管道检测数据和报告文件：</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>双网、双<span
+lang=EN-US>USB</span>接口、<span lang=EN-US>AV</span>输出</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>用户账号管理<span
+lang=EN-US>&nbsp;</span></span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>客户信用评级模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>项目管理模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>管道信息模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>设备信息模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>缺陷代码模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>客户信息模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>管道影像数据库</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>检测报告模块</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-family:Wingdings'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>数据搜索引擎</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=250 height=343
+src="S200%20B%20产品技术说明.files/image022.jpg"><img width=254 height=330
+src="S200%20B%20产品技术说明.files/image023.jpg"></span></p>
+
+<p class=MsoNormal style='margin-top:4.65pt;margin-right:0cm;margin-bottom:
+4.65pt;margin-left:57.35pt;text-indent:-15.75pt'><span lang=EN-US
+style='font-family:幼圆'> </span><span style='font-family:幼圆'>管道缺陷树状分析图<span
+lang=EN-US>                        </span>管道缺陷分析详细图表</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%'><span
+lang=EN-US>&nbsp;</span></p>
+
+<h1>六、<span lang=EN-US>SINGA200 B</span>包装与运输</h1>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>內包装含检验合格证、说明书、保修卡、设备清单</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>外包装为进出口免检木箱，确保设备装卸、运输无损、安全可靠地运抵目的地</span></p>
+
+<p class=MsoNormal align=left style='margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>汽车运输</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体'>包装图示：</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;font-family:
+宋体'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-size:14.0pt;font-family:黑体;color:red'> </span><span lang=EN-US
+style='font-size:12.0pt;font-family:黑体'><img width=166 height=152 id="图片 16"
+src="S200%20B%20产品技术说明.files/image024.png"> <img width=181 height=154
+src="S200%20B%20产品技术说明.files/image025.jpg"></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:-5.7pt;border-collapse:collapse;border:none'>
+ <tr style='height:22.7pt'>
+  <td width=189 style='width:142.0pt;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>包装项</span></p>
+  </td>
+  <td width=189 style='width:142.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>包装尺寸</span></p>
+  </td>
+  <td width=189 style='width:142.05pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>备注</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.7pt'>
+  <td width=189 style='width:142.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='line-height:150%;font-family:幼圆'>收线车木箱</span></p>
+  </td>
+  <td width=189 style='width:142.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>85cm*60cm*63cm</span></p>
+  </td>
+  <td width=189 style='width:142.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='line-height:150%;font-family:幼圆'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='margin-top:7.8pt;margin-right:0cm;
+margin-bottom:7.8pt;margin-left:0cm;text-align:center;line-height:150%'><span
+style='font-size:9.0pt;line-height:150%;font-family:宋体'>（注：图片仅供参考，以实物为准）</span></p>
+
+</div>
+
+</body>
+
+</html>
