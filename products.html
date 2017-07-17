@@ -216,12 +216,24 @@
 				return null;
 				//return "BHR建筑门窗保温性能检测设备1.htm";
 			}
-			
-//			alert(GetQueryString("a"));
-//			alert(decodeURI(GetQueryString("a")));
-//			document.getElementById("mine-iframe").src=decodeURI(GetQueryString("a"));
 
 			document.getElementById("mine-iframe").src="products/"+decodeURI(GetQueryString("file"));
+			
+			function setIframeHeight(iframe) {
+				if(iframe) {
+					var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+					if(iframeWin.document.body) {
+						iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+					}
+				}
+			};
+			
+			window.onload = function() {
+				setTimeout(function(){
+					setIframeHeight(document.getElementById('mine-iframe'));
+				},500)
+			};
+			
 			echo.init({
 				offset: 100,
 				throttle: 250,
@@ -231,19 +243,6 @@
 				}
 			});
 			// 图片赖加载
-
-			function setIframeHeight(iframe) {
-				if(iframe) {
-					var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-					if(iframeWin.document.body) {
-						iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-					}
-				}
-			};
-
-			window.onload = function() {
-				setIframeHeight(document.getElementById('mine-iframe'));
-			};
 		</script>
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="views/IMJ2V2/js/jquery.min.js"></script>
