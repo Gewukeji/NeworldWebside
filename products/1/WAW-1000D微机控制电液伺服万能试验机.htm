@@ -1,224 +1,684 @@
-<html>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=gb2312">
-<meta name=Generator content="Microsoft Word 12 (filtered)">
-<title>技  术  方  案  书</title>
-
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="WAW-1000D微机控制电液伺服万能试验机.files/filelist.xml">
+<link rel=Edit-Time-Data href="WAW-1000D微机控制电液伺服万能试验机.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>技 术 方 案 书</title>
+<link rel=themeData href="WAW-1000D微机控制电液伺服万能试验机.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="WAW-1000D微机控制电液伺服万能试验机.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
 <style>
 <!--
  /* Font Definitions */
  @font-face
 	{font-family:宋体;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
 @font-face
 	{font-family:黑体;
-	panose-1:2 1 6 9 6 1 1 1 1 1;}
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
 @font-face
 	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
 @font-face
 	{font-family:新宋体;
-	panose-1:2 1 6 9 3 1 1 1 1 1;}
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 680460288 22 0 262145 0;}
 @font-face
 	{font-family:"\@宋体";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
 @font-face
 	{font-family:"\@黑体";
-	panose-1:2 1 6 9 6 1 1 1 1 1;}
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
 @font-face
 	{font-family:"\@新宋体";
-	panose-1:2 1 6 9 3 1 1 1 1 1;}
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 680460288 22 0 262145 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0cm;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
 	margin-bottom:.0001pt;
 	text-align:justify;
 	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
 	font-size:10.5pt;
-	font-family:"Times New Roman","serif";}
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
 h1
-	{margin:0cm;
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 1 Char";
+	margin:0cm;
 	margin-bottom:.0001pt;
 	text-align:justify;
 	text-justify:inter-ideograph;
 	text-indent:28.0pt;
+	mso-pagination:widow-orphan;
 	page-break-after:avoid;
+	mso-outline-level:1;
 	font-size:16.0pt;
 	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
 	font-weight:normal;}
 h2
-	{margin:0cm;
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 2 Char";
+	margin:0cm;
 	margin-bottom:.0001pt;
 	text-align:center;
+	mso-pagination:widow-orphan;
 	page-break-after:avoid;
+	mso-outline-level:2;
 	font-size:16.0pt;
 	font-family:黑体;
+	mso-bidi-font-family:宋体;
 	font-weight:bold;}
 p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{margin:0cm;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"页眉 Char";
+	margin:0cm;
 	margin-bottom:.0001pt;
 	text-align:center;
+	mso-pagination:widow-orphan;
 	layout-grid-mode:char;
-	border:none;
-	padding:0cm;
 	font-size:9.0pt;
-	font-family:"Times New Roman","serif";}
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
 p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{margin:0cm;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"页脚 Char";
+	margin:0cm;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	layout-grid-mode:char;
 	font-size:9.0pt;
-	font-family:"Times New Roman","serif";}
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
 p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
-	{margin-top:0cm;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"正文文本缩进 2 Char";
+	margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:6.0pt;
 	margin-left:21.0pt;
 	text-align:justify;
 	text-justify:inter-ideograph;
 	line-height:200%;
+	mso-pagination:widow-orphan;
 	font-size:10.5pt;
-	font-family:"Times New Roman","serif";}
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
 a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
 a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
 p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	background:navy;
-	font-size:10.5pt;
-	font-family:"Times New Roman","serif";}
-p
-	{margin-right:0cm;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:宋体;}
-p.CharCharCharCharChar, li.CharCharCharCharChar, div.CharCharCharCharChar
-	{mso-style-name:" Char Char Char Char Char";
-	mso-style-link:默认段落字体;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"文档结构图 Char";
 	margin:0cm;
 	margin-bottom:.0001pt;
 	text-align:justify;
 	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
 	background:navy;
 	font-size:10.5pt;
-	font-family:"Times New Roman","serif";}
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 1";
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+span.2Char0
+	{mso-style-name:"正文文本缩进 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"正文文本缩进 2";
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+span.Char1
+	{mso-style-name:"文档结构图 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:文档结构图;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+span.Char2
+	{mso-style-name:"批注框文本 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:批注框文本;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+p.CharCharCharCharChar, li.CharCharCharCharChar, div.CharCharCharCharChar
+	{mso-style-name:"Char Char Char Char Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
  /* Page Definitions */
- @page Section1
+ @page
+	{mso-footnote-separator:url("WAW-1000D微机控制电液伺服万能试验机.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("WAW-1000D微机控制电液伺服万能试验机.files/header.htm") fcs;
+	mso-endnote-separator:url("WAW-1000D微机控制电液伺服万能试验机.files/header.htm") es;
+	mso-endnote-continuation-separator:url("WAW-1000D微机控制电液伺服万能试验机.files/header.htm") ecs;}
+@page Section1
 	{size:595.3pt 841.9pt;
 	margin:63.25pt 73.3pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
 	layout-grid:15.6pt;}
 div.Section1
 	{page:Section1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
 -->
 </style>
-
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="2"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=ZH-CN link=blue vlink=purple style='text-justify-trim:punctuation'>
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
 
 <div class=Section1 style='layout-grid:15.6pt'>
 
-<p class=MsoNormal align=left style='text-align:left;text-indent:21.75pt'><span
-lang=EN-US style='font-size:14.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
-style='font-size:14.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal style='text-indent:78.0pt'><span style='font-size:26.0pt;
-font-family:黑体'>技<span lang=EN-US>&nbsp; </span>术<span lang=EN-US>&nbsp; </span>方<span
-lang=EN-US>&nbsp; </span>案<span lang=EN-US>&nbsp; </span>书</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:36.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span style='font-size:16.0pt;font-family:宋体'>编号：</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='position:absolute;z-index:1;left:0px;
-margin-left:71px;margin-top:30px;width:542px;height:2px'><img width=542
-height=2 src="WAW-1000D微机控制电液伺服万能试验机.files/image001.gif"></span><span
-style='font-size:16.0pt;font-family:宋体'>项目：</span><span style='font-size:16.0pt'>
-</span><span lang=EN-US style='font-size:15.0pt'>WAW-1000D</span><span
-style='font-size:15.0pt;font-family:宋体;color:black'>微</span><span
-style='font-size:15.0pt;font-family:宋体;color:black'>机控制电液伺服万能试验机</span></p>
-
-<p class=MsoNormal><span style='position:absolute;z-index:3;left:0px;
-margin-left:59px;margin-top:39px;width:554px;height:2px'><img width=554
-height=2 src="WAW-1000D微机控制电液伺服万能试验机.files/image002.gif"></span><span
-style='font-size:16.0pt;font-family:宋体'>客户：</span><span lang=EN-US
-style='font-size:16.0pt'> </span></p>
-
-<p class=MsoNormal style='text-indent:35.0pt'><span style='position:absolute;
-z-index:4;left:0px;margin-left:59px;margin-top:39px;width:554px;height:2px'><img
-width=554 height=2 src="WAW-1000D微机控制电液伺服万能试验机.files/image002.gif"></span><span
-style='font-size:14.0pt;font-family:宋体'>（单位地址）</span></p>
-
-<p class=MsoNormal style='text-indent:44.0pt'><span style='position:absolute;
-z-index:2;left:0px;margin-left:47px;margin-top:39px;width:566px;height:2px'><img
-width=566 height=2 src="WAW-1000D微机控制电液伺服万能试验机.files/image003.gif"></span><span
-style='font-size:14.0pt;font-family:宋体'>（联系人、</span><span style='font-size:
-14.0pt'> </span><span style='font-size:14.0pt;font-family:宋体'>电话、传真、</span><span
-lang=EN-US style='font-size:14.0pt'>E-mail</span><span style='font-size:14.0pt;
-font-family:宋体'>）</span><span lang=EN-US style='font-size:14.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span style='font-size:22.0pt;font-family:宋体'>济南鑫光试验机制造限公司</span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
-style='font-size:16.0pt'>2015 </span><span style='font-size:16.0pt;font-family:
-宋体'>年</span><span lang=EN-US style='font-size:16.0pt'>&nbsp;&nbsp; </span><span
-style='font-size:16.0pt;font-family:宋体'>月</span><span lang=EN-US
-style='font-size:16.0pt'>&nbsp; </span><span style='font-size:16.0pt;
-font-family:宋体'>日</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:黑体'>&nbsp;</span></p>
-
-<p class=MsoNormal style='text-indent:64.7pt'><span style='font-family:宋体'>编制</span><span
-lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span style='font-family:宋体'>审核</span><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span style='font-family:宋体'>批准</span></p>
-
-<p class=MsoNormal style='text-indent:28.0pt'><span lang=EN-US
-style='font-size:20.0pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoNormal style='text-indent:88.0pt'><span style='font-size:20.0pt;
-font-family:宋体;color:black'>微</span><span style='font-size:22.0pt;font-family:
-宋体;color:black'>机控制电液式万能试验机</span></p>
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt;font-family:宋体;color:black'>微</span><span
+style='font-size:22.0pt;font-family:宋体;color:black'>机控制电液式万能试验机</span></p>
 
 <h1 align=center style='text-align:center;text-indent:0cm'><span lang=EN-US>WAW-1000D</span><span
 style='font-family:宋体'>技术方案书</span></h1>
@@ -228,13 +688,12 @@ style='font-family:宋体'>技术方案书</span></h1>
 
 <p class=MsoNormal style='text-indent:24.0pt'><b><span lang=EN-US
 style='font-size:14.0pt;font-family:宋体'>WAW-1000D</span></b><span
-style='font-size:12.0pt;font-family:宋体'>型微机控制电液伺服万能试验机主机采用油缸下置式主机</span><span
-style='font-size:12.0pt;font-family:宋体'>，<b>采用微机控制和显示功能</b>！主要用于金属、非金属的拉伸、压缩、弯曲和剪切试验。适用于冶金、建筑、轻工、航空、航天、材料、大专院校、科研单位等领域。试验操作和数据处理符合<span
+style='font-size:12.0pt;font-family:宋体'>型微机控制电液伺服万能试验机主机采用油缸下置式主机，<b>采用微机控制和显示功能</b>！主要用于金属、非金属的拉伸、压缩、弯曲和剪切试验。适用于冶金、建筑、轻工、航空、航天、材料、大专院校、科研单位等领域。试验操作和数据处理符合<span
 lang=EN-US>GB228-2010</span>《室温材料 金属拉伸试验方法》的要求。</span></p>
 
 <p class=MsoNormal align=center style='text-align:center;line-height:12.0pt'><span
-lang=EN-US><img width=575 height=484
-src="WAW-1000D微机控制电液伺服万能试验机.files/image004.jpg"></span></p>
+lang=EN-US><span style='mso-no-proof:yes'><img width=575 height=484
+id="_x0000_i1029" src="WAW-1000D微机控制电液伺服万能试验机.files/image004.jpg"></span></span></p>
 
 <p class=MsoNormal align=left style='text-align:left;text-indent:33.0pt'><span
 lang=EN-US style='font-size:22.0pt'>&nbsp;</span></p>
@@ -262,69 +721,67 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>全数字控制系统，代表�
 lang=EN-US>,</span>具有等速应力、等速应变、等速试验力、等速位移、试验力保持、位移保持等控制功能以及试验力，峰值、试样变形、活塞位移、试验曲线的屏幕显示功能</b>，全鼠标输入操作和控制模式智能设置专家系统，实现了控制模式的任意设置和各种控制方式之间的平滑切换，使系统具有最大的灵活性。<b><span
 lang=EN-US>2.4 </span>优点：</b></span></p>
 
-<p class=MsoNormal style='line-height:150%'><span
- lang=EN-US style='font-size:14.0pt;line-height:150%'>2.4.1</span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>低噪音，在最高工作载荷下</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'>50</span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>分贝以下，基本为静音状态。</span></p>
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+14.0pt;line-height:150%'>2.4.1</span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>低噪音，在最高工作载荷下</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>50</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>分贝以下，基本为静音状态。</span></p>
 
-<p class=MsoNormal style='line-height:150%'><span
- lang=EN-US style='font-size:12.0pt;line-height:150%'>2.4.2</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'> </span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>压力随动比常规设备节能</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'>70%</span></p>
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%'>2.4.2 </span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>压力随动比常规设备节能</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>70%</span></p>
 
-<p class=MsoNormal style='line-height:150%'><span
- lang=EN-US style='font-size:12.0pt;line-height:150%'>2.4.3</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'> </span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>控制精度高，控制精度可达万分之一。（常规为千分之五）</span></p>
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%'>2.4.3 </span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>控制精度高，控制精度可达万分之一。（常规为千分之五）</span></p>
 
-<p class=MsoNormal style='line-height:150%'><span
- lang=EN-US style='font-size:12.0pt;line-height:150%'>2.4.4</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'> </span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>无控制死区，起控点可达</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'>1%</span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>。</span></p>
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%'>2.4.4 </span><span style='font-size:12.0pt;line-height:
+150%;font-family:宋体'>无控制死区，起控点可达</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>1%</span><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>。</span></p>
 
-<p class=MsoNormal style='line-height:150%'><span
- lang=EN-US style='font-size:12.0pt;line-height:150%'>2.4.5</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%'>&nbsp; </span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>油路高度集成，泄露点少。</span></p>
+<p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%'>2.4.5&nbsp; </span><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>油路高度集成，泄露点少。</span></p>
 
-<p class=MsoNormal align=center style='text-align:center;line-height:150%'><i><span
-lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><img
-width=567 height=350 id="Picture 2"
-src="WAW-1000D微机控制电液伺服万能试验机.files/image005.jpg"></span></i></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><img width=567 height=350
+id="_x0000_i1028" src="WAW-1000D微机控制电液伺服万能试验机.files/image005.jpg"></span></i></p>
 
 <p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
 text-indent:-18.0pt;line-height:150%'><i><span lang=EN-US style='font-size:
-12.0pt;line-height:150%;font-family:宋体'>1）</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>1</span></i><i><span style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>）</span></i><span style='font-size:
 12.0pt;line-height:150%;font-family:宋体'>可以按<span lang=EN-US>GB228-2010</span>《室温材料
 金属拉伸试验方法》的要求完成试验的数据处理。试验过程能够模拟再现和试验数据的再分析。</span></p>
 
-<p class=MsoNormal align=center style='text-align:center;line-height:150%'><i><span
-lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><img
-width=571 height=358 id="Picture 3"
-src="WAW-1000D微机控制电液伺服万能试验机.files/image006.jpg"></span></i></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><img width=571 height=358
+id="_x0000_i1027" src="WAW-1000D微机控制电液伺服万能试验机.files/image006.jpg"></span></i></p>
 
 <p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
 text-indent:-18.0pt;line-height:150%'><i><span lang=EN-US style='font-size:
-12.0pt;line-height:150%;font-family:宋体'>2）</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>2</span></i><i><span style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>）</span></i><span style='font-size:
 12.0pt;line-height:150%;font-family:宋体'>基于<span lang=EN-US>Windows xp/win 7</span>操作系统的试验软件，全数字程控放大器保证调零、传感器标定全部由计算机自动进行，可对使用者实行分权限管理，具有多种图形显示窗口和单位换算功能。</span></p>
 
 <p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
 text-indent:-18.0pt;line-height:150%'><i><span lang=EN-US style='font-size:
-12.0pt;line-height:150%;font-family:宋体'>3）</span></i><i><span lang=EN-US
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>&nbsp;</span></i></p>
+12.0pt;line-height:150%;font-family:宋体'>3</span></i><i><span style='font-size:
+12.0pt;line-height:150%;font-family:宋体'>）<span lang=EN-US>&nbsp;</span></span></i></p>
 
-<p class=MsoNormal align=center style='text-align:center;line-height:150%'><i><span
-lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><img
-width=560 height=374 id="Picture 4"
-src="WAW-1000D微机控制电液伺服万能试验机.files/image007.jpg"></span></i></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><img width=560 height=374
+id="_x0000_i1026" src="WAW-1000D微机控制电液伺服万能试验机.files/image007.jpg"></span></i></p>
 
 <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
-lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'><img
-width=577 height=383 id="Picture 5"
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-no-proof:
+yes'><img width=577 height=383 id="_x0000_i1025"
 src="WAW-1000D微机控制电液伺服万能试验机.files/image008.jpg"></span></p>
 
 <p style='margin-left:-12.9pt;text-indent:48.0pt;word-break:break-all'>试验数据以数据库化管理，可以进行网络数据库通讯和管理。</p>
@@ -335,12 +792,12 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>安全保护装置</span></
 
 <p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;line-height:
 150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
-宋体'>a）</span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>当试验力超过每档最大试验力的<span
+宋体'>a</span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>）当试验力超过每档最大试验力的<span
 lang=EN-US>2%-5%</span>时，过载保护，系统卸荷。</span></p>
 
 <p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;line-height:
 150%'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
-宋体'>b）</span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>当活塞升起达到上极限位置时，行程保护，油泵电机停机。</span></p>
+宋体'>b</span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>）当活塞升起达到上极限位置时，行程保护，油泵电机停机。</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>2.6 </span></b><b><span
@@ -363,8 +820,8 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>主要性能技术指标</spa
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.1 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>最大试验力</span></b><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US> 1000
-kN</span>；</span></p>
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US>
+1000 kN</span>；</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.2 </span></b><b><span
@@ -380,21 +837,20 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>： ±<span lang=EN-US
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.4 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>活塞行程</span></b><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>：不小于<span
- lang=EN-US>250 mm</span>；</span></p>
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>：不小于<span lang=EN-US>250
+mm</span>；</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.5 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>活塞最大移动速度：</span></b><span
- lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>50 mm</span><span
-lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>/min</span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>50 mm/min</span><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>；</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.6 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>位移测量分辨力</span></b><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span
- lang=EN-US>0.01 mm</span>；</span></p>
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US>0.01
+mm</span>；</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.7 </span></b><b><span
@@ -407,23 +863,20 @@ line-height:150%;font-family:宋体'>变形测量示值精度：±<span lang=EN-US>0.5%</sp
 
 <p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
 12.0pt;line-height:150%;font-family:宋体'>3.9 </span><span style='font-size:12.0pt;
-line-height:150%;font-family:宋体'>变形<b>测量分辨力</b>：<span
- lang=EN-US>0.01 mm</span>；</span></p>
+line-height:150%;font-family:宋体'>变形<b>测量分辨力</b>：<span lang=EN-US>0.01 mm</span>；</span></p>
 
 <p class=MsoNormal style='margin-left:27.1pt;text-indent:-27.1pt;line-height:
 150%'><b><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
 宋体'>3.10 </span></b><b><span style='font-size:12.0pt;line-height:150%;
 font-family:宋体'>变形测量</span></b><span style='font-size:12.0pt;line-height:150%;
-font-family:宋体'>：标准配置标距<span
- lang=EN-US>50mm</span>，最大变形量<span
- lang=EN-US>10mm</span>引伸计一只（符合<span lang=EN-US>GB/T12160</span>的要求，<span
-lang=EN-US>1</span>级精确度）；</span></p>
+font-family:宋体'>：标准配置标距<span lang=EN-US>50mm</span>，最大变形量<span lang=EN-US>10mm</span>引伸计一只（符合<span
+lang=EN-US>GB/T12160</span>的要求，<span lang=EN-US>1</span>级精确度）；</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.11 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>最大拉伸试验空间</span></b><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>：不小于<span lang=EN-US> 550 mm (</span>包括活塞行程<span
-lang=EN-US>)</span></span></p>
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>：不小于<span lang=EN-US>
+550 mm (</span>包括活塞行程<span lang=EN-US>)</span></span></p>
 
 <p class=MsoNormal style='text-indent:30.0pt;line-height:150%'><span
 lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:宋体'>(</span><span
@@ -434,13 +887,13 @@ lang=EN-US>)</span></span></p>
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.12 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>最大压缩空间</span></b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>： 不小于<span lang=EN-US>&nbsp;&nbsp;
-500 mm(</span>选配：可根据用户要求加高<span
-lang=EN-US>)</span></span></p>
+500 mm(</span>选配：可根据用户要求加高<span lang=EN-US>)</span></span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.13 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>扁试样夹持厚度</span></b><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US> 0-40 mm</span></span></p>
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US>
+0-40 mm</span></span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.14</span></b><b><span
@@ -452,12 +905,13 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US>&n
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.15 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>圆试样夹持直径</span></b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>：φ<span lang=EN-US>26-</span>φ<span
- lang=EN-US>60 mm</span></span></p>
+lang=EN-US>60 mm</span></span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.16 </span></b><b><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>压盘尺寸</span></b><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US>204*204 mm</span></span></p>
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>：<span lang=EN-US>204*204
+mm</span></span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>3.17 </span></b><b><span
@@ -479,9 +933,11 @@ font-family:宋体'>：油压传感器（可根据用户要求选配负荷传感器）</span></p>
 style='font-size:14.0pt;line-height:150%;font-family:新宋体'>4</span></b><b><span
 style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></b></p>
 
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='margin-left:-.5pt;border-collapse:collapse;border:none'>
- <tr style='page-break-inside:avoid;height:22.5pt'>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.5pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid;
+  height:22.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;padding:0cm 0cm 0cm 0cm;
   height:22.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -511,7 +967,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   新宋体'>数<span lang=EN-US>&nbsp; </span>量</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:1;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -546,7 +1002,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   line-height:150%;font-family:新宋体'>套</span></b></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:2;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -581,7 +1037,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>件</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:3;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -616,7 +1072,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>件</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:4;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -651,7 +1107,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>件</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:5;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -685,7 +1141,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>件</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:6;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -712,7 +1168,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>&nbsp;</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:7;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -747,7 +1203,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   line-height:150%;font-family:新宋体'>件</span></b></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:8;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -782,7 +1238,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:9;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -817,7 +1273,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:10;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -853,7 +1309,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>台</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:11;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -888,7 +1344,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>台</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:12;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -923,7 +1379,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>台</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:13;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -958,7 +1414,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>台</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:14;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
@@ -985,7 +1441,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>&nbsp;</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:15;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1021,7 +1477,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:16;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1056,7 +1512,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>只</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:17;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1092,7 +1548,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>台</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:18;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1126,7 +1582,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>&nbsp;</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:19;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1162,7 +1618,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:20;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1196,7 +1652,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:21;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1230,7 +1686,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:22;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1264,7 +1720,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>台</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:23;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1299,7 +1755,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   font-family:新宋体'>套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:24;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1333,7 +1789,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   新宋体'>各一套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:25;page-break-inside:avoid;height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1367,7 +1823,8 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   新宋体'>一套</span></p>
   </td>
  </tr>
- <tr style='page-break-inside:avoid;height:25.5pt'>
+ <tr style='mso-yfti-irow:26;mso-yfti-lastrow:yes;page-break-inside:avoid;
+  height:25.5pt'>
   <td width=42 style='width:31.45pt;border:solid black 1.0pt;border-top:none;
   padding:0cm 0cm 0cm 0cm;height:25.5pt'>
   <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
@@ -1391,8 +1848,7 @@ style='font-size:14.0pt;line-height:150%;font-family:新宋体'>、主要配置</span></
   height:25.5pt'>
   <p class=MsoNormal align=center style='margin-left:10.2pt;text-align:center;
   line-height:150%'><span style='font-size:12.0pt;line-height:150%;font-family:
-  新宋体'>直径<span
-   lang=EN-US>30mm</span></span></p>
+  新宋体'>直径<span lang=EN-US>30mm</span></span></p>
   </td>
   <td width=91 style='width:68.25pt;border-top:none;border-left:none;
   border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -1446,13 +1902,11 @@ line-height:150%;font-family:宋体'>防止暴晒或靠近空调设备等；</span></p>
 12.0pt;line-height:150%;font-family:黑体'>6.5</span><span style='font-size:12.0pt;
 line-height:150%;font-family:宋体'>环境温度：</span><span lang=EN-US style='font-size:
 12.0pt;line-height:150%;font-family:黑体'>20</span><span style='font-size:12.0pt;
-line-height:150%;font-family:宋体'>±</span><span
- lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:黑体'>5</span><span
- style='font-size:12.0pt;line-height:150%;font-family:宋体'>℃</span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>且每小时波动小于</span><span
- lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:黑体'>2</span><span
- style='font-size:12.0pt;line-height:150%;font-family:宋体'>℃</span><span
-style='font-size:12.0pt;line-height:150%;font-family:宋体'>；相对湿度：≤</span><span
+line-height:150%;font-family:宋体'>±</span><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:黑体'>5</span><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>℃且每小时波动小于</span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;font-family:黑体'>2</span><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>℃；相对湿度：≤</span><span
 lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:黑体'>80%</span><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>；</span></p>
 
@@ -1504,8 +1958,8 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>人以上，直至会独立操�
 黑体'>&nbsp; 7.3</span><span style='font-size:12.0pt;line-height:150%;font-family:
 宋体'>定期走访用户，对用户出现要求服务需求，</span><span lang=EN-US style='font-size:12.0pt;
 line-height:150%;font-family:黑体'>4</span><span style='font-size:12.0pt;
-line-height:150%;font-family:宋体'>小时内响应，</span><span style='font-size:12.0pt;
-line-height:150%;font-family:黑体'> <span lang=EN-US>12</span></span><span
+line-height:150%;font-family:宋体'>小时内响应，</span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;font-family:黑体'> 12</span><span
 style='font-size:12.0pt;line-height:150%;font-family:宋体'>小时内到达用户现场；</span></p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
@@ -1533,15 +1987,16 @@ style='font-size:12.0pt;line-height:150%;font-family:宋体'>小时内到达用户现场；<
 <p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体;color:black'>单位名称：济南鑫光试验机制造有限公司</span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体;color:black'>生产地址：济南市章丘枣园医院北</span></b><b><span
- lang=EN-US style='font-size:12.0pt;color:black'>800</span></b><b><span
- style='font-size:12.0pt;font-family:宋体;color:black'>米</span></b><b><span
+lang=EN-US style='font-size:12.0pt;color:black'>800</span></b><b><span
+style='font-size:12.0pt;font-family:宋体;color:black'>米</span></b><b><span
 style='font-size:12.0pt;color:black'> </span></b></p>
 
 <p class=MsoNormal style='text-indent:11.8pt'><b><span style='font-size:12.0pt;
 font-family:宋体;color:black'>联系人：</span></b><b><span style='font-size:12.0pt;
 color:black'> </span></b><b><span style='font-size:12.0pt;font-family:宋体;
 color:black'>吕有畅</span></b><b><span lang=EN-US style='font-size:12.0pt;
-color:black'> 18653155927&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><span
+color:black'> 18653155927&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><span
 style='font-size:12.0pt;font-family:宋体;color:black'>邮</span></b><b><span
 lang=EN-US style='font-size:12.0pt;color:black'>&nbsp;&nbsp;&nbsp; </span></b><b><span
 style='font-size:12.0pt;font-family:宋体;color:black'>编：</span></b><b><span
