@@ -41,7 +41,11 @@
 				-moz-page-break-inside: avoid;
 				-webkit-column-break-inside: avoid;
 				break-inside: avoid;
-				border: 1px solid #000;
+				/*border: 1px solid #000;*/
+				border: none;
+				box-shadow: 2px 2px 2px #888888;
+				border-radius: 10px;
+				margin-bottom: 20px;
 			}
 			
 			.list-item img {
@@ -815,6 +819,17 @@
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="views/IMJ2V2/js/echo.min.js"></script>
 		<script>
+			
+			echo.init({
+				offset: 100,
+				throttle: 250,
+				unload: false,
+				callback: function(element, op) {
+					console.log(element, 'has been', op + 'ed')
+				}
+			});
+			// 图片赖加载
+			
 			$.get("product_header.html", function(data) {
 				$("#header").html(data);
 			});
@@ -836,15 +851,7 @@
 
 			document.getElementById(decodeURI(GetQueryString("type"))).style.display = "";
 
-			echo.init({
-				offset: 100,
-				throttle: 250,
-				unload: false,
-				callback: function(element, op) {
-					console.log(element, 'has been', op + 'ed')
-				}
-			});
-			// 图片赖加载
+			
 		</script>
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="views/IMJ2V2/js/jquery.min.js"></script>
