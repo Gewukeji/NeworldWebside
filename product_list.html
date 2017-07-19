@@ -15,71 +15,39 @@
 		<link rel="stylesheet" href="views/IMJ2V2/css/style.css">
 
 		<style type="text/css">
+			/*大层*/
+			
+			.container {
+				width: 80%;
+				margin: 0 auto;
+			}
+			/*瀑布流层*/
+			
+			.m-case-list {
+				-moz-column-count: 4;
+				/* Firefox */
+				-webkit-column-count: 4;
+				/* Safari 和 Chrome */
+				column-count: 4;
+				-moz-column-gap: 1em;
+				-webkit-column-gap: 1em;
+				column-gap: 1em;
+			}
+			/*一个内容层*/
+			
 			.list-item {
-				width: 262px;
-				float: left;
-				background: #fff;
-				margin-right: 20px;
-				margin-bottom: 50px;
-				list-style-type: none;
-				text-decoration: none;
-				list-style: none;
-				border: none;
-				-webkit-margin-before: 0;
-				-webkit-margin-after: 40px;
-				-webkit-margin-start: 0px;
-				-webkit-margin-end: 20px;
-				-moz-margin-start: 0px;
-				-moz-margin-end: 20px;
-				display: block;
+				padding: 1em;
+				margin: 0 0 1em 0;
+				-moz-page-break-inside: avoid;
+				-webkit-column-break-inside: avoid;
+				break-inside: avoid;
+				border: 1px solid #000;
 			}
 			
-			.list-img {
-				width: 264px;
-				float: left;
-				margin: 0px;
-				height: 164px;
-				border: 0px;
-				padding: 0px;
-				list-style: none;
-				color: #585757;
-				font-size: 14px;
-				font-family: "Microsoft Yahei", arial, "Hiragino Sans GB", sans-serif;
-			}
-			
-			.list-div {
-				width: 264px;
-				float: left;
-				padding: 0px;
-				height: 35px;
-				overflow: hidden;
-				margin-top: 2px;
-				list-style: none;
-				border: none;
-				display: block;
-				font-size: 14px;
-				font-family: "Microsoft Yahei", arial, "Hiragino Sans GB", sans-serif;
-				color: #585757;
-			}
-			
-			.list-span {
-				width: 264px;
-				float: left;
-				height: 20px;
-				overflow: hidden;
-				margin: 8px auto;
-			}
-			
-			.list-p {
-				margin-bottom: 8px;
-				font-size: 14px;
-				font-weight: 400;
-				margin-left: 2px;
-				font-family: "Gotham", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif!important;
-				line-height: 20px;
-				width: 255px;
-				float: left;
-				color: #000;
+			.list-item img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 10px;
 			}
 			
 			section {
@@ -93,241 +61,241 @@
 
 		</div>
 
-		<div class="am-container m-home-box" style="margin-top: 100px;">
+		<div class="container m-home-box" style="margin-top: 100px;">
 			<section id="jzqy" class="m-case-list" style="display: none;">
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=BY-4000D型塑料拉力试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=BY-4000D型塑料拉力试验机.htm'">
+					<img class="list-img" src="products/1/BY-4000D型塑料拉力试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">BY-4000D型塑料拉力试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=DTS-3型电动卷材不透水仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=DTS-3型电动卷材不透水仪.htm'">
+					<img class="list-img" src="products/1/DTS-3型电动卷材不透水仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">DTS-3型电动卷材不透水仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=FA-DF-4电脑沥青软化点测定仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=FA-DF-4电脑沥青软化点测定仪.htm'">
+					<img class="list-img" src="products/1/FA-DF-4电脑沥青软化点测定仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">FA-DF-4电脑沥青软化点测定仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=Fluke 1508 绝缘电阻测试仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=Fluke 1508 绝缘电阻测试仪.htm'">
+					<img class="list-img" src="products/1/Fluke 1508 绝缘电阻测试仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">Fluke 1508 绝缘电阻测试仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=GW-4050B钢筋反复弯曲试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=GW-4050B钢筋反复弯曲试验机.htm'">
+					<img class="list-img" src="products/1/GW-4050B钢筋反复弯曲试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">GW-4050B钢筋反复弯曲试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=GWA-1000B钢绞线拉力试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=GWA-1000B钢绞线拉力试验机.htm'">
+					<img class="list-img" src="products/1/GWA-1000B钢绞线拉力试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">GWA-1000B钢绞线拉力试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HC-7L混凝土含气量测定仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HC-7L混凝土含气量测定仪.htm'">
+					<img class="list-img" src="products/1/HC-7L混凝土含气量测定仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HC-7L混凝土含气量测定仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HCZ-75垂直燃烧仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HCZ-75垂直燃烧仪.htm'">
+					<img class="list-img" src="products/1/HCZ-75垂直燃烧仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HCZ-75垂直燃烧仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HD-2131 高压试验台.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HD-2131 高压试验台.htm'">
+					<img class="list-img" src="products/1/HD-2131 高压试验台.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HD-2131 高压试验台</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HG-1000混凝土贯入阻力仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HG-1000混凝土贯入阻力仪.htm'">
+					<img class="list-img" src="products/1/HG-1000混凝土贯入阻力仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HG-1000混凝土贯入阻力仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HJW-60型混凝土强制式单卧轴搅拌机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HJW-60型混凝土强制式单卧轴搅拌机.htm'">
+					<img class="list-img" src="products/1/HJW-60型混凝土强制式单卧轴搅拌机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HJW-60型混凝土强制式单卧轴搅拌机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HP-4.0数显混凝土抗渗仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HP-4.0数显混凝土抗渗仪.htm'">
+					<img class="list-img" src="products/1/HP-4.0数显混凝土抗渗仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HP-4.0数显混凝土抗渗仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=H-S806落锤冲击试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=H-S806落锤冲击试验机.htm'">
+					<img class="list-img" src="products/1/H-S806落锤冲击试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">H-S806落锤冲击试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HSP-540混凝土收缩膨胀仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HSP-540混凝土收缩膨胀仪.htm'">
+					<img class="list-img" src="products/1/HSP-540混凝土收缩膨胀仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HSP-540混凝土收缩膨胀仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=HWK-300A 热变形维卡测定仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=HWK-300A 热变形维卡测定仪.htm'">
+					<img class="list-img" src="products/1/HWK-300A 热变形维卡测定仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HWK-300A 热变形维卡测定仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=JW235 开关插座通断性能检测仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=JW235 开关插座通断性能检测仪.htm'">
+					<img class="list-img" src="products/1/JW235 开关插座通断性能检测仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JW235 开关插座通断性能检测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=LYY-8沥青标准延伸度仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=LYY-8沥青标准延伸度仪.htm'">
+					<img class="list-img" src="products/1/LYY-8沥青标准延伸度仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">LYY-8沥青标准延伸度仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=lzr-3型电脑沥青针入度测定仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=lzr-3型电脑沥青针入度测定仪.htm'">
+					<img class="list-img" src="products/1/lzr-3型电脑沥青针入度测定仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">lzr-3型电脑沥青针入度测定仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=RF-139型马歇尔自动击实仪.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=RF-139型马歇尔自动击实仪.htm'">
+					<img class="list-img" src="products/1/RF-139型马歇尔自动击实仪.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">RF-139型马歇尔自动击实仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=WAW-1000D微机控制电液伺服万能试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=WAW-1000D微机控制电液伺服万能试验机.htm'">
+					<img class="list-img" src="products/1/WAW-1000D微机控制电液伺服万能试验机.files/image004.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">WAW-1000D微机控制电液伺服万能试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=WSC-300型微机控制钢绞线松弛试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=WSC-300型微机控制钢绞线松弛试验机.htm'">
+					<img class="list-img" src="products/1/WSC-300型微机控制钢绞线松弛试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">WSC-300型微机控制钢绞线松弛试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=XJJ-50简支梁冲击试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=XJJ-50简支梁冲击试验机.htm'">
+					<img class="list-img" src="products/1/XJJ-50简支梁冲击试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">XJJ-50简支梁冲击试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=ZNY1000系列 - 管材耐压爆破试验机.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=ZNY1000系列 - 管材耐压爆破试验机.htm'">
+					<img class="list-img" src="products/1/ZNY1000系列 - 管材耐压爆破试验机.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZNY1000系列 - 管材耐压爆破试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=标准养护箱40B.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=标准养护箱40B.htm'">
+					<img class="list-img" src="products/1/标准养护箱40B.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">标准养护箱40B</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=混凝土振动台0.5M 0.8M 1M型号.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=混凝土振动台0.5M 0.8M 1M型号.htm'">
+					<img class="list-img" src="products/1/混凝土振动台0.5M 0.8M 1M型号.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">混凝土振动台0.5M 0.8M 1M型号</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=抗折恒荷压力机 JYE-300.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=抗折恒荷压力机 JYE-300.htm'">
+					<img class="list-img" src="products/1/抗折恒荷压力机 JYE-300.files/image001.png">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">抗折恒荷压力机 JYE-300</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=沥青闪点仪SYD-3536.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=沥青闪点仪SYD-3536.htm'">
+					<img class="list-img" src="products/1/沥青闪点仪SYD-3536.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">沥青闪点仪SYD-3536</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=沥青粘度计 SYD-0621A.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=沥青粘度计 SYD-0621A.htm'">
+					<img class="list-img" src="products/1/沥青粘度计 SYD-0621A.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">沥青粘度计 SYD-0621A</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=马歇尔稳定度测定仪 LWD-3.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=马歇尔稳定度测定仪 LWD-3.htm'">
+					<img class="list-img" src="products/1/马歇尔稳定度测定仪 LWD-3.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">马歇尔稳定度测定仪 LWD-3</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=水泥胶砂搅拌机JJ-5.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=水泥胶砂搅拌机JJ-5.htm'">
+					<img class="list-img" src="products/1/水泥胶砂搅拌机JJ-5.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">水泥胶砂搅拌机JJ-5</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=水泥净浆搅拌机   NJ-160A.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=水泥净浆搅拌机   NJ-160A.htm'">
+					<img class="list-img" src="products/1/水泥净浆搅拌机   NJ-160A.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">水泥净浆搅拌机   NJ-160A</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=万能试验机300kN  WES-300B.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=万能试验机300kN  WES-300B.htm'">
+					<img class="list-img" src="products/1/万能试验机300kN  WES-300B.files/colorschememapping.xml">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">万能试验机300kN  WES-300B</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=压力机 JYE-2OOO.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=压力机 JYE-2OOO.htm'">
+					<img class="list-img" src="products/1/压力机 JYE-2OOO.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">压力机 JYE-2OOO</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=1&file=震筛机ZBSX-92A.htm'">
-					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=1&file=震筛机ZBSX-92A.htm'">
+					<img class="list-img" src="products/1/震筛机ZBSX-92A.files/image001.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">震筛机ZBSX-92A</p></span>
 					</div>
@@ -336,21 +304,21 @@
 
 			<section id="djjc" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=2&file=JCQ-503B简介.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=2&file=JCQ-503B简介.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JCQ-503B 无线测控/远程监管静力载荷测试仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=2&file=ZBL-p8000无线基桩动测仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=2&file=ZBL-p8000无线基桩动测仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZBL-p8000无线基桩动测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=2&file=ZBL-U5700多通道超声测桩仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=2&file=ZBL-U5700多通道超声测桩仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZBL-U5700多通道超声测桩仪</p></span>
@@ -361,56 +329,56 @@
 
 			<section id="ztjg" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=DJD2Z电子经纬仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=DJD2Z电子经纬仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">DJD2Z电子经纬仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=DSZ1水准仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=DSZ1水准仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">DSZ1水准仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=GLM250博世激光测距仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=GLM250博世激光测距仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">GLM250博世激光测距仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=S260.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=S260.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZBL-S260数显回弹仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=SLY800B砂浆贯入仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=SLY800B砂浆贯入仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">SLY800B砂浆贯入仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=SW-100、200、300、500锚杆拉拔仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=SW-100、200、300、500锚杆拉拔仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">SW-100、200、300、500锚杆拉拔仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=ZBL-R660一体式钢筋检测仪1.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=ZBL-R660一体式钢筋检测仪1.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZBL-R660一体式钢筋检测仪1</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=3&file=ZBL-U510.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=3&file=ZBL-U510.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZBL-U510</p></span>
@@ -421,14 +389,14 @@
 
 			<section id="jzmq" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=4&file=JGJ-1密封胶相容性试验箱.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=4&file=JGJ-1密封胶相容性试验箱.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JGJ-1密封胶相容性试验箱</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=4&file=MQSM幕墙方案.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=4&file=MQSM幕墙方案.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">MQSM幕墙方案</p></span>
@@ -439,98 +407,98 @@
 
 			<section id="gjg" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=CM8000湿膜卡.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=CM8000湿膜卡.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">CM8000湿膜卡</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=CSF-2高强螺栓抗滑移系数检测仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=CSF-2高强螺栓抗滑移系数检测仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">CSF-2高强螺栓抗滑移系数检测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=HLC焊缝规.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=HLC焊缝规.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HLC焊缝规</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=MP-A2.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=MP-A2.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">MP-A2 手持式磁粉探伤仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=MP-A2L.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=MP-A2L.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">MP-A2L 手持式磁粉探伤仪 </p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=NWJT-3多功能磁粉探伤仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=NWJT-3多功能磁粉探伤仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NWJT-3多功能磁粉探伤仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=NWJT-160新款超声波测厚仪资料.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=NWJT-160新款超声波测厚仪资料.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NWJT-160新款超声波测厚仪资料</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=NWJT-280便携式里氏硬度计（断码）.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=NWJT-280便携式里氏硬度计（断码）.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NWJT-280便携式里氏硬度计（断码）</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=NWJT-300便携式里氏硬度计（OLED） -.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=NWJT-300便携式里氏硬度计（OLED） -.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NWJT-300便携式里氏硬度计（OLED） -</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=NWJT-800涂层测厚仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=NWJT-800涂层测厚仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NWJT-800涂层测厚仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=NWJT-900经济型.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=NWJT-900经济型.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NWJT-900经济型</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=TL160里氏硬度计.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=TL160里氏硬度计.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">TL160里氏硬度计</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=TL260涂层测厚仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=TL260涂层测厚仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">TL260涂层测厚仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=5&file=ZBL-U610数字超声波探伤仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=5&file=ZBL-U610数字超声波探伤仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZBL-U610数字超声波探伤仪</p></span>
@@ -541,154 +509,154 @@
 
 			<section id="qlsd" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=ZTR-12超前地质探测仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=ZTR-12超前地质探测仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZTR-12超前地质探测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=1、颠簸累积式道路平整度检测系统.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=1、颠簸累积式道路平整度检测系统.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">颠簸累积式道路平整度检测系统</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=3、激光道路平整度构造深度检测系统TY-C1012A.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=3、激光道路平整度构造深度检测系统TY-C1012A.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">激光道路平整度构造深度检测系统TY-C1012A</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=10、全自动落锤式弯沉检测系统.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=10、全自动落锤式弯沉检测系统.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">全自动落锤式弯沉检测系统</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=BRZ-201 3D全景钻孔电视技术参数.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=BRZ-201 3D全景钻孔电视技术参数.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">BRZ-201 3D全景钻孔电视技术参数</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=HPCK-F型远距离裂缝观测仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=HPCK-F型远距离裂缝观测仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HPCK-F型远距离裂缝观测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=HPQN-X型免靶标桥梁挠度仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=HPQN-X型免靶标桥梁挠度仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HPQN-X型免靶标桥梁挠度仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=HPSD系列激光隧道断面仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=HPSD系列激光隧道断面仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">HPSD系列激光隧道断面仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=JL-IUDS(B)智能超声成孔质量检测仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=JL-IUDS(B)智能超声成孔质量检测仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JL-IUDS(B)智能超声成孔质量检测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=JL-MG(D)锚杆质量检测仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=JL-MG(D)锚杆质量检测仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JL-MG(D)锚杆质量检测仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=NJ-4000混凝土电阻率测试仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=NJ-4000混凝土电阻率测试仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">NJ-4000混凝土电阻率测试仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=TL260涂层测厚仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=TL260涂层测厚仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">TL260涂层测厚仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=北京耐久产品资料及报价.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=北京耐久产品资料及报价.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">北京耐久产品资料及报价</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=测斜仪-CX-3C.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=测斜仪-CX-3C.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">测斜仪-CX-3C</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=德国德拉EVD动态变形模量测试仪彩页.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=德国德拉EVD动态变形模量测试仪彩页.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">德国德拉EVD动态变形模量测试仪彩页</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=俄罗斯OKO雷达简介.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=俄罗斯OKO雷达简介.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">俄罗斯OKO雷达</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=混凝土CT系统（配置，参数）20161009 (12.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=混凝土CT系统（配置，参数）20161009 (12.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">混凝土CT系统</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=逆反射标线测量仪301.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=逆反射标线测量仪301.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">逆反射标线测量仪301</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=逆反射标志测量仪101A.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=逆反射标志测量仪101A.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">逆反射标志测量仪101A</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=桥梁动静载实验设备--江苏东华测试.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=桥梁动静载实验设备--江苏东华测试.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">桥梁动静载实验设备--江苏东华测试</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=徐州静载.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=徐州静载.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">徐州静载</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=6&file=中科院电子所CAS系列雷达产品介绍 ( ).htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=6&file=中科院电子所CAS系列雷达产品介绍 ( ).htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">中科院电子所CAS系列雷达产品</p></span>
@@ -699,14 +667,14 @@
 
 			<section id="jzmc" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=7&file=MCD-2424门窗综合物理性能试验机.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=7&file=MCD-2424门窗综合物理性能试验机.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">MCD-2424门窗综合物理性能试验机</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=7&file=XYJ门窗角强度试验机.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=7&file=XYJ门窗角强度试验机.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">XYJ门窗角强度试验机</p></span>
@@ -717,35 +685,35 @@
 
 			<section id="jzjn" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=8&file=BHR建筑门窗保温性能检测设备.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=8&file=BHR建筑门窗保温性能检测设备.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">BHR建筑门窗保温性能检测设备</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=8&file=JW18建筑墙体保温性能检测设备.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=8&file=JW18建筑墙体保温性能检测设备.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JW18建筑墙体保温性能检测设备</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=8&file=TPMBE平板导热仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=8&file=TPMBE平板导热仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">TPMBE平板导热仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=8&file=TR70B传热系数.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=8&file=TR70B传热系数.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">TR70B传热系数</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=8&file=ZDL-III中空玻璃.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=8&file=ZDL-III中空玻璃.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">ZDL-III中空玻璃</p></span>
@@ -756,42 +724,42 @@
 
 			<section id="snhj" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=9&file=4160甲醛分析仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=9&file=4160甲醛分析仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">4160甲醛分析仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=9&file=GC112A气象色谱仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=9&file=GC112A气象色谱仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">GC112A气象色谱仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=9&file=JC-RAD14测氡仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=9&file=JC-RAD14测氡仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">JC-RAD14测氡仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=9&file=PGS-6000H低本底多道伽玛能谱仪.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=9&file=PGS-6000H低本底多道伽玛能谱仪.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">PGS-6000H低本底多道伽玛能谱仪</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=9&file=SPH500氢气发生器.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=9&file=SPH500氢气发生器.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">SPH500氢气发生器</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=9&file=UV-5500分光光度计.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=9&file=UV-5500分光光度计.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">UV-5500分光光度计</p></span>
@@ -802,28 +770,28 @@
 
 			<section id="cctvgd" class="m-case-list" style="display: none;">
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=10&file=E7管道潜望镜（QV）产品介绍.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=10&file=E7管道潜望镜（QV）产品介绍.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">E7管道潜望镜（QV）</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=10&file=S200 B 产品技术说明.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=10&file=S200 B 产品技术说明.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">S200 B</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=10&file=SINGA300防爆型机器人CCTV检测系统资料2015.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=10&file=SINGA300防爆型机器人CCTV检测系统资料2015.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">SINGA300防爆型机器人CCTV检测系统</p></span>
 					</div>
 				</ul>
 
-				<ul class="list-item" onclick="javascript:window.location.href='products.html?path=10&file=特瑞升管道机器人产品资料.htm'">
+				<ul class="list-item" data-mine="javascript:window.location.href='products.html?path=10&file=特瑞升管道机器人产品资料.htm'">
 					<img class="list-img" src="http://www.bjhcgk.com/uploaddata/170706/1-1FF6115401333.jpg">
 					<div class="list-div">
 						<span class="list-span"><p class="list-p">特瑞升管道机器人</p></span>
