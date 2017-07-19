@@ -14,46 +14,24 @@
 		<link rel="stylesheet" href="views/IMJ2V2/css/amazeui.min.css">
 		<link rel="stylesheet" href="views/IMJ2V2/css/style.css">
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
-
-    <![endif]-->
 	</head>
-	<!--[if lt IE 9]>
-<div class="am-modal am-modal-no-btn am-modal-active" tabindex="-1" id="doc-modal-1"
-     style="display: block; width: 400px; margin-left: -200px; margin-top: -112px;">
-    <div class="am-modal-dialog">
-        <div class="am-modal-hd">365 安全卫士提醒</div>
-        <div class="am-modal-bd">你的浏览器太古董了，还不换一个你就奥特曼了
-            <a href="http://browsehappy.com/" target="_blank" class="am-btn am-btn-danger am-btn-sm am-radius"
-               rel="nofollow">速速点击换一个</a>
-        </div>
-    </div>
-</div>
-<![endif]-->
 
 	<body>
 		<div id="header" style="margin-bottom: 100px;">
-			
+
 		</div>
 		<div id="panel" class="am-container m-home-box" style="margin-top: 100px;">
 			<iframe id="mine-iframe" src="" scrolling="no" width="100%"></iframe>
 		</div>
 		<div id="footer">
-			
+
 		</div>
-		<!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="views/IMJ2V2/js/polyfill/rem.min.js"></script>
-<script src="views/IMJ2V2/js/polyfill/respond.min.js"></script>
-<script src="views/IMJ2V2/js/amazeui.legacy.js"></script>
-<![endif]-->
 		<script src="views/IMJ2V2/js/echo.min.js"></script>
 		<script>
-			
+			if($(window).outerHeight < $(document.body).outerHeight() + 70 + 328) {
+				document.getElementById("footer").style = "width:100%; position:fixed; left:0; bottom:0;";
+			}
+
 			$.get("product_header.html", function(data) {
 				$("#header").html(data);
 			});
@@ -61,7 +39,7 @@
 			$.get("product_footer.html", function(data) {
 				$("#footer").html(data);
 			});
-			
+
 			function GetQueryString(name) {
 				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
 				var r = window.location.search.substr(1).match(reg);
@@ -70,10 +48,10 @@
 				//return "BHR建筑门窗保温性能检测设备1.htm";
 			}
 
-			document.getElementById("mine-iframe").src="products/"+decodeURI(GetQueryString("path"))+"/"+decodeURI(GetQueryString("file"));
-			
+			document.getElementById("mine-iframe").src = "products/" + decodeURI(GetQueryString("path")) + "/" + decodeURI(GetQueryString("file"));
+
 			function setIframeHeight(iframe) {
-			
+
 				if(iframe) {
 					var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
 					if(iframeWin.document.body) {
@@ -81,13 +59,13 @@
 					}
 				}
 			};
-			
+
 			window.onload = function() {
-				setTimeout(function(){
+				setTimeout(function() {
 					setIframeHeight(document.getElementById('mine-iframe'));
-				},500)
+				}, 500)
 			};
-			
+
 			echo.init({
 				offset: 100,
 				throttle: 250,
@@ -97,15 +75,6 @@
 				}
 			});
 			// 图片赖加载
-			
-			$(function() {
-				$("body").scrollTop(10); //控制滚动条下移10px  
-				if($("body").scrollTop() > 0) {
-				} else {
-					document.getElementById("footer").style="width:100%; position:fixed; left:0; bottom:0;";
-				}
-				$("body").scrollTop(0); //滚动条返回顶部  
-			});
 		</script>
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="views/IMJ2V2/js/jquery.min.js"></script>
