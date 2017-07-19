@@ -38,20 +38,18 @@
 
 		</div>
 		<div data-am-widget="slider" class="am-slider am-slider-i2" data-am-flexslider="{controlNav:false}">
-			<ul class="am-slides">
-				<li class="am-slider-images" style="background-image: url(views/IMJ2V2/images/banner1.jpg)">
-					<div class="am-container am-slider-desc">
-						<div class="am-slider-content">
-							<h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left', delay: 100}">智造 · 新世界</h2>
-							<br/>
+			<li class="am-slider-images" style="background-image: url(views/IMJ2V2/images/banner1.jpg);list-style: none;">
+				<div class="am-container am-slider-desc">
+					<div class="am-slider-content">
+						<h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left', delay: 100}">智造 · 新世界</h2>
+						<br/>
 
-							<p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right">
-								以领先的技术、高性能的产品、和细致的服务<br/>与全球检测界的同仁携手“智造”新世界。</p>
-							<a href="./about.html" class="am-btn-xs am-btn am-btn-danger am-radius am-animation-slide-bottom am-animation-delay-1" rel="nofollow" data-am-scrollspy="{animation:'slide-bottom', delay: 100}">了解更多</a>
-						</div>
+						<p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right">
+							以领先的技术、高性能的产品、和细致的服务<br/>与全球检测界的同仁携手“智造”新世界。</p>
+						<a href="./about.html" class="am-btn-xs am-btn am-btn-danger am-radius am-animation-slide-bottom am-animation-delay-1" rel="nofollow" data-am-scrollspy="{animation:'slide-bottom', delay: 100}">了解更多</a>
 					</div>
-				</li>
-			</ul>
+				</div>
+			</li>
 		</div>
 		<div class="m-services m-home-box">
 			<section class="am-container">
@@ -220,7 +218,7 @@
 
 			</ul>
 		</section>
-		
+
 		<hr>
 		<section class="am-container m-home-box m-partner">
 
@@ -292,15 +290,14 @@
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="views/IMJ2V2/js/echo.min.js"></script>
 		<script>
-			$.get("product_header.html",function(data){
-        		$("#header").html(data);
+			$.get("product_header.html", function(data) {
+				$("#header").html(data);
 			});
-			
-			$.get("product_footer.html",function(data){
-        		$("#footer").html(data);
+
+			$.get("product_footer.html", function(data) {
+				$("#footer").html(data);
 			});
-			
-			
+
 			echo.init({
 				offset: 100,
 				throttle: 250,
