@@ -856,9 +856,9 @@
 
 		</div>
 		
-		<footer id="footer">
+		<div id="footer">
 			
-		</footer>
+		</div>
 		<!--[if lt IE 9]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
@@ -896,6 +896,15 @@
 				}
 			});
 			// 图片赖加载
+			
+			$(function() {
+				$("body").scrollTop(10); //控制滚动条下移10px  
+				if($("body").scrollTop() > 0) {
+				} else {
+					document.getElementById("footer").style="width:100%; position:fixed; left:0; bottom:0;";
+				}
+				$("body").scrollTop(0); //滚动条返回顶部  
+			});
 		</script>
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="views/IMJ2V2/js/jquery.min.js"></script>
