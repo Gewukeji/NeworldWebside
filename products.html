@@ -97,6 +97,15 @@
 				}
 			});
 			// 图片赖加载
+			
+			$(function() {
+				$("body").scrollTop(10); //控制滚动条下移10px  
+				if($("body").scrollTop() > 0) {
+				} else {
+					document.getElementById("footer").style="width:100%; position:fixed; left:0; bottom:0;";
+				}
+				$("body").scrollTop(0); //滚动条返回顶部  
+			});
 		</script>
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="views/IMJ2V2/js/jquery.min.js"></script>
@@ -105,7 +114,7 @@
 		<script src='views/IMJ2V2/js/jquery.qrcode.min.js'></script>
 		<script type="text/javascript">
 			$(function() {
-				var str = "http://www.imj2.com";
+				var str = "http://www.neworldtech.cn";
 				$("#code").qrcode({
 					render: "table",
 					width: 100,
