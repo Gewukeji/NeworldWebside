@@ -45,6 +45,7 @@
         /*一个内容层*/
 
         .list-item {
+            background-color: #fff;;
             padding: 1em;
             margin: 0 0 2em 0;
             -moz-page-break-inside: avoid;
@@ -54,6 +55,15 @@
             border: none;
             box-shadow: 2px 2px 5px #888888;
             border-radius: 10px;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .list-item:hover {
+            transition: all 0.5s ease 0s;
+            transform: scale(1.06);
+            opacity: 0.8;
         }
 
         .list-item img {
@@ -95,7 +105,7 @@
 </div>
 <![endif]-->
 
-<body style="min-width: 100%;">
+<body style="min-width: 100%; background-color: #f9f9f9">
 <div id="header">
 
 </div>
